@@ -1,0 +1,18 @@
+<h1>Update Power Form</h1>
+
+<%= form_for @power do |f| %>
+
+<%= f.label :name %>
+<%= f.text_field :name%><br />
+
+<%= f.label :description %>
+<%= f.text_area :description%><br />
+
+<%= f.label "Select Heroines" %><br />
+
+<% @heroines.each do |heroine| %>
+<input id='heroine_<%= heroine.id %>' name="power[heroines][]" type="checkbox" value="<%= heroine.id %>" /><%= heroine.super_name %><br />
+<% end %>
+
+<%= f.submit %>
+<% end %>

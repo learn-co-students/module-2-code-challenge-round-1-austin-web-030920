@@ -1,0 +1,12 @@
+<h1><%= @heroine.super_name %></h1>
+
+<h3>Legal Name:</h3>
+<p><%= @heroine.name %></p>
+
+<h3>Powers:</h3>
+
+<ul>
+<% @heroine.powers.each do |power| %>
+    <li><%= link_to power.name, power_path(power) %></li>
+<% end %>
+</ul>
