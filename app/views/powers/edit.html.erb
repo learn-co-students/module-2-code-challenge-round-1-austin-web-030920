@@ -1,17 +1,5 @@
 <h1>Update Power Form</h1>
 
-<% if @errors %>
-
-<h3><%= pluralize(@errors.count, "error") %> occured:</h3>
-<ul>
-<% @errors.full_messages.each do |message| %>
-<li><%= message %></li>
-<% end %>
-</ul>
-
-<% end %>
-
-
 <%= form_for @power do |f| %>
 
 <%= f.label :name %>

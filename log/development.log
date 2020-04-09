@@ -1208,3 +1208,58 @@ Processing by PowersController#show as HTML
 Completed 200 OK in 453ms (Views: 406.3ms | ActiveRecord: 1.0ms)
 
 
+Started GET "/powers/3" for 127.0.0.1 at 2020-04-09 14:56:39 -0500
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPower Load (1.0ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering powers/show.html.erb within layouts/application
+  Rendered powers/show.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 717ms (Views: 509.0ms | ActiveRecord: 26.6ms)
+
+
+Started GET "/powers/3" for 127.0.0.1 at 2020-04-09 14:56:42 -0500
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPower Load (1.5ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering powers/show.html.erb within layouts/application
+  Rendered powers/show.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 505ms (Views: 469.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/powers/3" for 127.0.0.1 at 2020-04-09 14:56:47 -0500
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPower Load (0.8ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering powers/show.html.erb within layouts/application
+  Rendered powers/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 516ms (Views: 489.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/powers/3/edit" for 127.0.0.1 at 2020-04-09 14:56:49 -0500
+Processing by PowersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPower Load (0.8ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering powers/edit.html.erb within layouts/application
+  [1m[36mHeroine Load (1.9ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered powers/edit.html.erb within layouts/application (184.1ms)
+Completed 200 OK in 669ms (Views: 578.0ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/heroines" for 127.0.0.1 at 2020-04-09 14:57:25 -0500
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (1.2ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (74.1ms)
+Completed 200 OK in 531ms (Views: 511.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/heroines/1" for 127.0.0.1 at 2020-04-09 14:57:34 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (1.0ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (1.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 1]]
+  Rendered heroines/show.html.erb within layouts/application (138.8ms)
+Completed 200 OK in 552ms (Views: 510.5ms | ActiveRecord: 9.7ms)
+
+

@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  # resources :powers
-  # resources :heroines
 
-  resources :powers, except: [:destroy]
-  resources :heroines, except: [:destroy]
+  resources :powers, except: [:new, :create, :destroy]
+  resources :heroines, except: [:edit, :update, :destroy]
 end
