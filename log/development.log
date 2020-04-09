@@ -2577,3 +2577,471 @@ DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is depr
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateHeroinePowers (20200409194938)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "heroine_powers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "heroine_id" integer, "power_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200409194938"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateHeroines (20170725185425)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "heroines" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "super_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170725185425"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreatePowers (20170725185638)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "powers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170725185638"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateHeroinePowers (20200409194938)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "heroine_powers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "heroine_id" integer, "power_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200409194938"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-04-09 19:55:20.874121"], ["updated_at", "2020-04-09 19:55:20.874121"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "super strength"], ["description", "gives the wielder super-human strengths"], ["created_at", "2020-04-09 19:55:48.465339"], ["updated_at", "2020-04-09 19:55:48.465339"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "flight"], ["description", "gives the wielder the ability to fly through the skies at supersonic speed"], ["created_at", "2020-04-09 19:55:48.469347"], ["updated_at", "2020-04-09 19:55:48.469347"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "super human senses"], ["description", "allows the wielder to use her senses at a super-human level"], ["created_at", "2020-04-09 19:55:48.472181"], ["updated_at", "2020-04-09 19:55:48.472181"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "elasticity"], ["description", "can stretch the human body to extreme lengths"], ["created_at", "2020-04-09 19:55:48.474183"], ["updated_at", "2020-04-09 19:55:48.474183"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kamala Khan"], ["super_name", "Ms. Marvel"], ["created_at", "2020-04-09 19:55:48.480476"], ["updated_at", "2020-04-09 19:55:48.480476"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Doreen Green"], ["super_name", "Squirrel Girl"], ["created_at", "2020-04-09 19:55:48.482605"], ["updated_at", "2020-04-09 19:55:48.482605"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Gwen Stacy"], ["super_name", "Spider-Gwen"], ["created_at", "2020-04-09 19:55:48.484900"], ["updated_at", "2020-04-09 19:55:48.484900"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Janet Van Dyne"], ["super_name", "The Wasp"], ["created_at", "2020-04-09 19:55:48.487890"], ["updated_at", "2020-04-09 19:55:48.487890"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Wanda Maximoff"], ["super_name", "Scarlet Witch"], ["created_at", "2020-04-09 19:55:48.489856"], ["updated_at", "2020-04-09 19:55:48.489856"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Carol Danvers"], ["super_name", "Captain Marvel"], ["created_at", "2020-04-09 19:55:48.492059"], ["updated_at", "2020-04-09 19:55:48.492059"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Jean Grey"], ["super_name", "Dark Phoenix"], ["created_at", "2020-04-09 19:55:48.494110"], ["updated_at", "2020-04-09 19:55:48.494110"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ororo Munroe"], ["super_name", "Storm"], ["created_at", "2020-04-09 19:55:48.496023"], ["updated_at", "2020-04-09 19:55:48.496023"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kitty Pryde"], ["super_name", "Shadowcat"], ["created_at", "2020-04-09 19:55:48.498195"], ["updated_at", "2020-04-09 19:55:48.498195"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Elektra Natchios"], ["super_name", "Elektra"], ["created_at", "2020-04-09 19:55:48.500186"], ["updated_at", "2020-04-09 19:55:48.500186"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 1], ["power_id", 4], ["created_at", "2020-04-09 19:55:48.533980"], ["updated_at", "2020-04-09 19:55:48.533980"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 2]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 2], ["power_id", 2], ["created_at", "2020-04-09 19:55:51.062758"], ["updated_at", "2020-04-09 19:55:51.062758"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 3]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 3], ["power_id", 4], ["created_at", "2020-04-09 19:55:51.691295"], ["updated_at", "2020-04-09 19:55:51.691295"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 4]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 4], ["power_id", 1], ["created_at", "2020-04-09 19:55:52.394841"], ["updated_at", "2020-04-09 19:55:52.394841"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.4ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 4], ["power_id", 4], ["created_at", "2020-04-09 19:55:53.192002"], ["updated_at", "2020-04-09 19:55:53.192002"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 5]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 5], ["power_id", 2], ["created_at", "2020-04-09 19:55:53.755457"], ["updated_at", "2020-04-09 19:55:53.755457"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 6]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 6], ["power_id", 1], ["created_at", "2020-04-09 19:55:54.250867"], ["updated_at", "2020-04-09 19:55:54.250867"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 7]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 7], ["power_id", 1], ["created_at", "2020-04-09 19:55:54.667273"], ["updated_at", "2020-04-09 19:55:54.667273"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 7], ["power_id", 4], ["created_at", "2020-04-09 19:55:54.965174"], ["updated_at", "2020-04-09 19:55:54.965174"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 8]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 8], ["power_id", 4], ["created_at", "2020-04-09 19:55:55.269378"], ["updated_at", "2020-04-09 19:55:55.269378"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateHeroines (20170725185425)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "heroines" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "super_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170725185425"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreatePowers (20170725185638)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "powers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170725185638"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateHeroinePowers (20200409194938)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "heroine_powers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "heroine_id" integer, "power_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200409194938"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-04-09 20:05:52.896471"], ["updated_at", "2020-04-09 20:05:52.896471"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "super strength"], ["description", "gives the wielder super-human strengths"], ["created_at", "2020-04-09 20:06:00.041989"], ["updated_at", "2020-04-09 20:06:00.041989"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "flight"], ["description", "gives the wielder the ability to fly through the skies at supersonic speed"], ["created_at", "2020-04-09 20:06:00.045343"], ["updated_at", "2020-04-09 20:06:00.045343"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "super human senses"], ["description", "allows the wielder to use her senses at a super-human level"], ["created_at", "2020-04-09 20:06:00.047243"], ["updated_at", "2020-04-09 20:06:00.047243"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "elasticity"], ["description", "can stretch the human body to extreme lengths"], ["created_at", "2020-04-09 20:06:00.049085"], ["updated_at", "2020-04-09 20:06:00.049085"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kamala Khan"], ["super_name", "Ms. Marvel"], ["created_at", "2020-04-09 20:06:00.054693"], ["updated_at", "2020-04-09 20:06:00.054693"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Doreen Green"], ["super_name", "Squirrel Girl"], ["created_at", "2020-04-09 20:06:00.056740"], ["updated_at", "2020-04-09 20:06:00.056740"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Gwen Stacy"], ["super_name", "Spider-Gwen"], ["created_at", "2020-04-09 20:06:00.058568"], ["updated_at", "2020-04-09 20:06:00.058568"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Janet Van Dyne"], ["super_name", "The Wasp"], ["created_at", "2020-04-09 20:06:00.060461"], ["updated_at", "2020-04-09 20:06:00.060461"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Wanda Maximoff"], ["super_name", "Scarlet Witch"], ["created_at", "2020-04-09 20:06:00.062477"], ["updated_at", "2020-04-09 20:06:00.062477"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Carol Danvers"], ["super_name", "Captain Marvel"], ["created_at", "2020-04-09 20:06:00.064372"], ["updated_at", "2020-04-09 20:06:00.064372"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Jean Grey"], ["super_name", "Dark Phoenix"], ["created_at", "2020-04-09 20:06:00.066303"], ["updated_at", "2020-04-09 20:06:00.066303"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ororo Munroe"], ["super_name", "Storm"], ["created_at", "2020-04-09 20:06:00.068155"], ["updated_at", "2020-04-09 20:06:00.068155"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kitty Pryde"], ["super_name", "Shadowcat"], ["created_at", "2020-04-09 20:06:00.069951"], ["updated_at", "2020-04-09 20:06:00.069951"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Elektra Natchios"], ["super_name", "Elektra"], ["created_at", "2020-04-09 20:06:00.071789"], ["updated_at", "2020-04-09 20:06:00.071789"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "powers"[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 1], ["power_id", 2], ["created_at", "2020-04-09 20:06:00.097664"], ["updated_at", "2020-04-09 20:06:00.097664"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "powers"[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 2], ["power_id", 4], ["created_at", "2020-04-09 20:06:00.101368"], ["updated_at", "2020-04-09 20:06:00.101368"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "powers"[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 3], ["power_id", 4], ["created_at", "2020-04-09 20:06:00.105145"], ["updated_at", "2020-04-09 20:06:00.105145"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "powers"[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 5]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 6]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 8]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 9]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 10]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "powers" WHERE "powers"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "powers" WHERE "powers"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "powers" WHERE "powers"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "powers" WHERE "powers"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "super strength"], ["description", "gives the wielder super-human strengths"], ["created_at", "2020-04-09 20:06:26.821931"], ["updated_at", "2020-04-09 20:06:26.821931"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "flight"], ["description", "gives the wielder the ability to fly through the skies at supersonic speed"], ["created_at", "2020-04-09 20:06:26.824104"], ["updated_at", "2020-04-09 20:06:26.824104"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "super human senses"], ["description", "allows the wielder to use her senses at a super-human level"], ["created_at", "2020-04-09 20:06:26.826101"], ["updated_at", "2020-04-09 20:06:26.826101"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "elasticity"], ["description", "can stretch the human body to extreme lengths"], ["created_at", "2020-04-09 20:06:26.828160"], ["updated_at", "2020-04-09 20:06:26.828160"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kamala Khan"], ["super_name", "Ms. Marvel"], ["created_at", "2020-04-09 20:06:26.830201"], ["updated_at", "2020-04-09 20:06:26.830201"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Doreen Green"], ["super_name", "Squirrel Girl"], ["created_at", "2020-04-09 20:06:26.832155"], ["updated_at", "2020-04-09 20:06:26.832155"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Gwen Stacy"], ["super_name", "Spider-Gwen"], ["created_at", "2020-04-09 20:06:26.833966"], ["updated_at", "2020-04-09 20:06:26.833966"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Janet Van Dyne"], ["super_name", "The Wasp"], ["created_at", "2020-04-09 20:06:26.835755"], ["updated_at", "2020-04-09 20:06:26.835755"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Wanda Maximoff"], ["super_name", "Scarlet Witch"], ["created_at", "2020-04-09 20:06:26.837820"], ["updated_at", "2020-04-09 20:06:26.837820"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Carol Danvers"], ["super_name", "Captain Marvel"], ["created_at", "2020-04-09 20:06:26.839722"], ["updated_at", "2020-04-09 20:06:26.839722"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Jean Grey"], ["super_name", "Dark Phoenix"], ["created_at", "2020-04-09 20:06:26.841564"], ["updated_at", "2020-04-09 20:06:26.841564"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ororo Munroe"], ["super_name", "Storm"], ["created_at", "2020-04-09 20:06:26.843378"], ["updated_at", "2020-04-09 20:06:26.843378"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kitty Pryde"], ["super_name", "Shadowcat"], ["created_at", "2020-04-09 20:06:26.845177"], ["updated_at", "2020-04-09 20:06:26.845177"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Elektra Natchios"], ["super_name", "Elektra"], ["created_at", "2020-04-09 20:06:26.846963"], ["updated_at", "2020-04-09 20:06:26.846963"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "powers"[0m
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 11], ["power_id", 8], ["created_at", "2020-04-09 20:06:26.871912"], ["updated_at", "2020-04-09 20:06:26.871912"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "powers"[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 11]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 12]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 13]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 14]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 15]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 16]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 17]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 18]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 19]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 20]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "powers" WHERE "powers"."id" = ?[0m  [["id", 5]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "powers" WHERE "powers"."id" = ?[0m  [["id", 6]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "powers" WHERE "powers"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "powers" WHERE "powers"."id" = ?[0m  [["id", 8]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "super strength"], ["description", "gives the wielder super-human strengths"], ["created_at", "2020-04-09 20:07:29.895536"], ["updated_at", "2020-04-09 20:07:29.895536"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "flight"], ["description", "gives the wielder the ability to fly through the skies at supersonic speed"], ["created_at", "2020-04-09 20:07:29.898260"], ["updated_at", "2020-04-09 20:07:29.898260"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "super human senses"], ["description", "allows the wielder to use her senses at a super-human level"], ["created_at", "2020-04-09 20:07:29.900717"], ["updated_at", "2020-04-09 20:07:29.900717"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "elasticity"], ["description", "can stretch the human body to extreme lengths"], ["created_at", "2020-04-09 20:07:29.902770"], ["updated_at", "2020-04-09 20:07:29.902770"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kamala Khan"], ["super_name", "Ms. Marvel"], ["created_at", "2020-04-09 20:07:29.904990"], ["updated_at", "2020-04-09 20:07:29.904990"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Doreen Green"], ["super_name", "Squirrel Girl"], ["created_at", "2020-04-09 20:07:29.907208"], ["updated_at", "2020-04-09 20:07:29.907208"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Gwen Stacy"], ["super_name", "Spider-Gwen"], ["created_at", "2020-04-09 20:07:29.909200"], ["updated_at", "2020-04-09 20:07:29.909200"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Janet Van Dyne"], ["super_name", "The Wasp"], ["created_at", "2020-04-09 20:07:29.911384"], ["updated_at", "2020-04-09 20:07:29.911384"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Wanda Maximoff"], ["super_name", "Scarlet Witch"], ["created_at", "2020-04-09 20:07:29.913370"], ["updated_at", "2020-04-09 20:07:29.913370"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Carol Danvers"], ["super_name", "Captain Marvel"], ["created_at", "2020-04-09 20:07:29.915256"], ["updated_at", "2020-04-09 20:07:29.915256"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Jean Grey"], ["super_name", "Dark Phoenix"], ["created_at", "2020-04-09 20:07:29.917174"], ["updated_at", "2020-04-09 20:07:29.917174"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ororo Munroe"], ["super_name", "Storm"], ["created_at", "2020-04-09 20:07:29.919051"], ["updated_at", "2020-04-09 20:07:29.919051"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kitty Pryde"], ["super_name", "Shadowcat"], ["created_at", "2020-04-09 20:07:29.921209"], ["updated_at", "2020-04-09 20:07:29.921209"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Elektra Natchios"], ["super_name", "Elektra"], ["created_at", "2020-04-09 20:07:29.923262"], ["updated_at", "2020-04-09 20:07:29.923262"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 21], ["power_id", 12], ["created_at", "2020-04-09 20:07:29.948858"], ["updated_at", "2020-04-09 20:07:29.948858"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 22], ["power_id", 11], ["created_at", "2020-04-09 20:07:29.952265"], ["updated_at", "2020-04-09 20:07:29.952265"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 23], ["power_id", 10], ["created_at", "2020-04-09 20:07:29.955593"], ["updated_at", "2020-04-09 20:07:29.955593"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 24], ["power_id", 10], ["created_at", "2020-04-09 20:07:29.959022"], ["updated_at", "2020-04-09 20:07:29.959022"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 25], ["power_id", 11], ["created_at", "2020-04-09 20:07:29.962636"], ["updated_at", "2020-04-09 20:07:29.962636"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 26], ["power_id", 12], ["created_at", "2020-04-09 20:07:29.966040"], ["updated_at", "2020-04-09 20:07:29.966040"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 27], ["power_id", 9], ["created_at", "2020-04-09 20:07:29.969464"], ["updated_at", "2020-04-09 20:07:29.969464"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 28], ["power_id", 11], ["created_at", "2020-04-09 20:07:29.974295"], ["updated_at", "2020-04-09 20:07:29.974295"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 29], ["power_id", 11], ["created_at", "2020-04-09 20:07:29.979747"], ["updated_at", "2020-04-09 20:07:29.979747"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 30], ["power_id", 9], ["created_at", "2020-04-09 20:07:29.984167"], ["updated_at", "2020-04-09 20:07:29.984167"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/heroines" for ::1 at 2020-04-09 15:07:39 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (1.0ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (33.5ms)
+Completed 200 OK in 351ms (Views: 320.7ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/powers" for ::1 at 2020-04-09 15:07:44 -0500
+Processing by PowersController#index as HTML
+  Rendering powers/index.html.erb within layouts/application
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 9]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 10]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 11]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 12]]
+  Rendered powers/index.html.erb within layouts/application (100.7ms)
+Completed 200 OK in 139ms (Views: 119.6ms | ActiveRecord: 5.7ms)
+
+
