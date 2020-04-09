@@ -1,0 +1,13 @@
+<h2>About This Heroine</h2>
+
+<ul>
+  <% @heroines.each do |heroine| %>
+    <li>
+      <%= heroine.name %>
+      <%= heroine.super_name %>
+    </li>
+    <br>
+    <%= link_to "Back", (@back) %>
+  <% end %>
+  <%= heroine = @heroines.find_by(id: 1).name %>
+</ul>
