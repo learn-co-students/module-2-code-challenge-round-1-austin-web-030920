@@ -128,3 +128,64 @@ FOREIGN KEY ("power_id")
             WHERE name='index_heroine_powers_on_heroine_id' AND type='index'
 [0m
 DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/macbook/Flatiron/mod2/coding-challenge/superheroines/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/macbook/Flatiron/mod2/coding-challenge/superheroines/config/initializers/new_framework_defaults.rb:21)
+  [1m[36mHeroine Load (1.0ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mHeroinePower Load (0.2ms)[0m  [1m[34mSELECT  "heroine_powers".* FROM "heroine_powers" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" ORDER BY "heroines"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" ORDER BY "powers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 1], ["power_id", 1], ["created_at", "2020-04-09 18:11:52.748329"], ["updated_at", "2020-04-09 18:11:52.748329"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mHeroinePower Load (0.2ms)[0m  [1m[34mSELECT  "heroine_powers".* FROM "heroine_powers" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mHeroine Load (0.1ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" ORDER BY "heroines"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/macbook/Flatiron/mod2/coding-challenge/superheroines/config/initializers/new_framework_defaults.rb:21)
+  [1m[36mHeroinePower Load (0.9ms)[0m  [1m[34mSELECT  "heroine_powers".* FROM "heroine_powers" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" ORDER BY "powers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" ORDER BY "powers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" ORDER BY "powers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/macbook/Flatiron/mod2/coding-challenge/superheroines/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_heroine_powers_on_power_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_heroine_powers_on_power_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_heroine_powers_on_heroine_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_heroine_powers_on_heroine_id' AND type='index'
+[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/macbook/Flatiron/mod2/coding-challenge/superheroines/config/initializers/new_framework_defaults.rb:21)
+  [1m[36mPower Load (0.9ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" ORDER BY "powers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" ORDER BY "powers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" ORDER BY "powers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" ORDER BY "powers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mHeroinePower Load (0.2ms)[0m  [1m[34mSELECT  "heroine_powers".* FROM "heroine_powers" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" ORDER BY "powers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" ORDER BY "powers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" ORDER BY "powers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mHeroinePower Load (0.2ms)[0m  [1m[34mSELECT  "heroine_powers".* FROM "heroine_powers" ORDER BY "heroine_powers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHeroinePower Load (0.2ms)[0m  [1m[34mSELECT  "heroine_powers".* FROM "heroine_powers" ORDER BY "heroine_powers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mHeroine Load (0.1ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" ORDER BY "heroines"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mHeroine Load (0.1ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" ORDER BY "heroines"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/macbook/Flatiron/mod2/coding-challenge/superheroines/config/initializers/new_framework_defaults.rb:21)
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" ORDER BY "powers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ? LIMIT ?[0m  [["power_id", 1], ["LIMIT", 11]]
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" ORDER BY "heroines"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/macbook/Flatiron/mod2/coding-challenge/superheroines/config/initializers/new_framework_defaults.rb:21)
+  [1m[36mHeroine Load (0.1ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" ORDER BY "heroines"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ? LIMIT ?[0m  [["heroine_id", 1], ["LIMIT", 11]]
