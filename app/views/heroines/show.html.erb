@@ -1,0 +1,7 @@
+<h4><%= "Name: " + @heroine.name %><br>
+<h4><%= "Super Name: " + @heroine.super_name %>
+<ul>
+<% @heroine.heroine_power.each do |heroine_power| %>
+<li><%= heroine_power.name %></li><br>
+<% end %>
+</ul>

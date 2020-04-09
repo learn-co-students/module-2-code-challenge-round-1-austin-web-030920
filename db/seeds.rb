@@ -8,7 +8,7 @@ powers = [
   {name: "elasticity", description: "can stretch the human body to extreme lengths" }
 ]
 
-powers.each {|power| Power.create(power)}
+powers.each {|power| Power.create(power) && power.name.titleize}
 
 heroines = [
   {name: "Kamala Khan", super_name: "Ms. Marvel"},
@@ -23,4 +23,4 @@ heroines = [
   {name: "Elektra Natchios", super_name: "Elektra" }
 ]
 
-heroines.each { |heroine| Heroine.create(heroine) }
+heroines.each {|heroine| Heroine.create(heroine)}
