@@ -1,0 +1,1229 @@
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateHeroines (20170725185425)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "heroines" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "super_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170725185425"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreatePowers (20170725185638)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "powers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170725185638"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-04-09 16:59:31.096944"], ["updated_at", "2020-04-09 16:59:31.096944"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mHeroine Load (0.1ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "super strength"], ["description", "gives the wielder super-human strengths"], ["created_at", "2020-04-09 16:59:37.190895"], ["updated_at", "2020-04-09 16:59:37.190895"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "flight"], ["description", "gives the wielder the ability to fly through the skies at supersonic speed"], ["created_at", "2020-04-09 16:59:37.195212"], ["updated_at", "2020-04-09 16:59:37.195212"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "super human senses"], ["description", "allows the wielder to use her senses at a super-human level"], ["created_at", "2020-04-09 16:59:37.197803"], ["updated_at", "2020-04-09 16:59:37.197803"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "elasticity"], ["description", "can stretch the human body to extreme lengths"], ["created_at", "2020-04-09 16:59:37.200117"], ["updated_at", "2020-04-09 16:59:37.200117"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kamala Khan"], ["super_name", "Ms. Marvel"], ["created_at", "2020-04-09 16:59:37.209338"], ["updated_at", "2020-04-09 16:59:37.209338"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Doreen Green"], ["super_name", "Squirrel Girl"], ["created_at", "2020-04-09 16:59:37.212102"], ["updated_at", "2020-04-09 16:59:37.212102"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Gwen Stacy"], ["super_name", "Spider-Gwen"], ["created_at", "2020-04-09 16:59:37.214648"], ["updated_at", "2020-04-09 16:59:37.214648"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Janet Van Dyne"], ["super_name", "The Wasp"], ["created_at", "2020-04-09 16:59:37.216901"], ["updated_at", "2020-04-09 16:59:37.216901"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Wanda Maximoff"], ["super_name", "Scarlet Witch"], ["created_at", "2020-04-09 16:59:37.219337"], ["updated_at", "2020-04-09 16:59:37.219337"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Carol Danvers"], ["super_name", "Captain Marvel"], ["created_at", "2020-04-09 16:59:37.221860"], ["updated_at", "2020-04-09 16:59:37.221860"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Jean Grey"], ["super_name", "Dark Phoenix"], ["created_at", "2020-04-09 16:59:37.224529"], ["updated_at", "2020-04-09 16:59:37.224529"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ororo Munroe"], ["super_name", "Storm"], ["created_at", "2020-04-09 16:59:37.226873"], ["updated_at", "2020-04-09 16:59:37.226873"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kitty Pryde"], ["super_name", "Shadowcat"], ["created_at", "2020-04-09 16:59:37.229913"], ["updated_at", "2020-04-09 16:59:37.229913"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Elektra Natchios"], ["super_name", "Elektra"], ["created_at", "2020-04-09 16:59:37.232433"], ["updated_at", "2020-04-09 16:59:37.232433"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateHeroines (20170725185425)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (5.2ms)[0m  [1m[35mCREATE TABLE "heroines" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "super_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170725185425"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreatePowers (20170725185638)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "powers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170725185638"]]
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateHeroinePowers (20200409170631)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "heroine_powers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "heroine_id" integer, "power_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_0d7b234c41"
+FOREIGN KEY ("heroine_id")
+  REFERENCES "heroines" ("id")
+, CONSTRAINT "fk_rails_049a9b6513"
+FOREIGN KEY ("power_id")
+  REFERENCES "powers" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_heroine_powers_on_heroine_id" ON "heroine_powers" ("heroine_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_heroine_powers_on_heroine_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_heroine_powers_on_heroine_id' AND type='index'
+[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE  INDEX "index_heroine_powers_on_power_id" ON "heroine_powers" ("power_id")[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200409170631"]]
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-04-09 17:08:48.397762"], ["updated_at", "2020-04-09 17:08:48.397762"]]
+  [1m[35m (4.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_heroine_powers_on_power_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_heroine_powers_on_power_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_heroine_powers_on_heroine_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_heroine_powers_on_heroine_id' AND type='index'
+[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "super strength"], ["description", "gives the wielder super-human strengths"], ["created_at", "2020-04-09 17:09:17.982767"], ["updated_at", "2020-04-09 17:09:17.982767"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "flight"], ["description", "gives the wielder the ability to fly through the skies at supersonic speed"], ["created_at", "2020-04-09 17:09:17.986782"], ["updated_at", "2020-04-09 17:09:17.986782"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "super human senses"], ["description", "allows the wielder to use her senses at a super-human level"], ["created_at", "2020-04-09 17:09:17.990147"], ["updated_at", "2020-04-09 17:09:17.990147"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "elasticity"], ["description", "can stretch the human body to extreme lengths"], ["created_at", "2020-04-09 17:09:17.994019"], ["updated_at", "2020-04-09 17:09:17.994019"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kamala Khan"], ["super_name", "Ms. Marvel"], ["created_at", "2020-04-09 17:09:18.011243"], ["updated_at", "2020-04-09 17:09:18.011243"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Doreen Green"], ["super_name", "Squirrel Girl"], ["created_at", "2020-04-09 17:09:18.015372"], ["updated_at", "2020-04-09 17:09:18.015372"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Gwen Stacy"], ["super_name", "Spider-Gwen"], ["created_at", "2020-04-09 17:09:18.019492"], ["updated_at", "2020-04-09 17:09:18.019492"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Janet Van Dyne"], ["super_name", "The Wasp"], ["created_at", "2020-04-09 17:09:18.023918"], ["updated_at", "2020-04-09 17:09:18.023918"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Wanda Maximoff"], ["super_name", "Scarlet Witch"], ["created_at", "2020-04-09 17:09:18.028190"], ["updated_at", "2020-04-09 17:09:18.028190"]]
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Carol Danvers"], ["super_name", "Captain Marvel"], ["created_at", "2020-04-09 17:09:18.033206"], ["updated_at", "2020-04-09 17:09:18.033206"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Jean Grey"], ["super_name", "Dark Phoenix"], ["created_at", "2020-04-09 17:09:18.037718"], ["updated_at", "2020-04-09 17:09:18.037718"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ororo Munroe"], ["super_name", "Storm"], ["created_at", "2020-04-09 17:09:18.041136"], ["updated_at", "2020-04-09 17:09:18.041136"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kitty Pryde"], ["super_name", "Shadowcat"], ["created_at", "2020-04-09 17:09:18.046081"], ["updated_at", "2020-04-09 17:09:18.046081"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Elektra Natchios"], ["super_name", "Elektra"], ["created_at", "2020-04-09 17:09:18.051107"], ["updated_at", "2020-04-09 17:09:18.051107"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/" for 127.0.0.1 at 2020-04-09 12:20:37 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/kyleriner/.rvm/gems/ruby-2.6.1/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/kyleriner/.rvm/gems/ruby-2.6.1/gems/railties-5.1.6/lib/rails/templates/rails/welcome/index.html.erb (16.7ms)
+Completed 200 OK in 38ms (Views: 28.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/heroines" for 127.0.0.1 at 2020-04-09 12:20:42 -0500
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (2.1ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (39.6ms)
+Completed 200 OK in 1127ms (Views: 1096.9ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/heroines/1" for 127.0.0.1 at 2020-04-09 12:20:45 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (2.4ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 72ms (Views: 53.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/heroines" for 127.0.0.1 at 2020-04-09 12:20:48 -0500
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.5ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 65ms (Views: 61.7ms | ActiveRecord: 0.5ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/heroines" for 127.0.0.1 at 2020-04-09 12:21:53 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.7ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 315ms (Views: 296.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/heroines/1" for 127.0.0.1 at 2020-04-09 12:21:54 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (0.8ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 107ms (Views: 93.1ms | ActiveRecord: 1.2ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/heroines/1" for 127.0.0.1 at 2020-04-09 12:22:10 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (0.1ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 229ms (Views: 208.1ms | ActiveRecord: 0.6ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/powers/1" for 127.0.0.1 at 2020-04-09 12:23:21 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPower Load (0.7ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering powers/show.html.erb within layouts/application
+  Rendered powers/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 246ms (Views: 212.7ms | ActiveRecord: 1.4ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[36mHeroine Load (3.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" ORDER BY "heroines"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" ORDER BY "heroines"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[36mHeroine Load (0.1ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" ORDER BY "heroines"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" ORDER BY "heroines"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPower Load (8.2ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" ORDER BY "powers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" ORDER BY "powers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mHeroinePower Load (0.7ms)[0m  [1m[34mSELECT  "heroine_powers".* FROM "heroine_powers" LIMIT ?[0m  [["LIMIT", 11]]
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/heroines/new" for 127.0.0.1 at 2020-04-09 12:37:46 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  [1m[36mPower Load (0.6ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  Rendered heroines/new.html.erb within layouts/application (52.0ms)
+Completed 500 Internal Server Error in 97ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `power' for #<Heroine:0x00007fe14a1c4700>
+Did you mean?  powers
+               powers=):
+     8:     <%= f.text_field :super_name %><br>
+     9: 
+    10:     <label> Heroine Super Power: </label><br>
+    11:     <%= f.select :power, Power.all.collect { |power| power.name } %><br>
+    12: 
+    13:     <%= f.submit%>
+    14: <% end %>
+  
+app/views/heroines/new.html.erb:11:in `block in _app_views_heroines_new_html_erb__832583940430430131_70302793934000'
+app/views/heroines/new.html.erb:3:in `_app_views_heroines_new_html_erb__832583940430430131_70302793934000'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/heroines/new" for 127.0.0.1 at 2020-04-09 12:40:27 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  [1m[36mPower Load (1.3ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  Rendered heroines/new.html.erb within layouts/application (62241.5ms)
+Completed 500 Internal Server Error in 62297ms (ActiveRecord: 3.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `power' for #<Heroine:0x00007fbfe16d19a8>
+Did you mean?  powers
+               powers=):
+     9: 
+    10:     <% binding.pry %>
+    11:     <label> Heroine Super Power: </label><br>
+    12:     <%= f.select :powers, Power.all.collect { |power| power.name } %><br>
+    13: 
+    14:     <%= f.submit%>
+    15: <% end %>
+  
+app/views/heroines/new.html.erb:12:in `block in _app_views_heroines_new_html_erb__1551229546823780448_70231058968060'
+app/views/heroines/new.html.erb:3:in `_app_views_heroines_new_html_erb__1551229546823780448_70231058968060'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/heroines/new" for 127.0.0.1 at 2020-04-09 12:41:53 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  Rendered heroines/new.html.erb within layouts/application (52.6ms)
+Completed 200 OK in 435ms (Views: 412.4ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/heroines" for 127.0.0.1 at 2020-04-09 12:42:08 -0500
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qntOCEr7vb0ONN6NeNJBK71qumQNjJn+MqS88lSw6ZxghTHDLQf9Cq5MdvytuvAS+KIKSuAMvvKDiOfN6i6ynQ==", "heroine"=>{"name"=>"Bob", "super_name"=>"Bobby", "powers"=>"elasticity"}, "commit"=>"Create Heroine"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Power(#70188124583940) expected, got nil which is an instance of NilClass(#70188112657960)):
+  
+app/controllers/heroines_controller.rb:18:in `create'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/heroines/new" for 127.0.0.1 at 2020-04-09 12:42:37 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  Rendered heroines/new.html.erb within layouts/application (74.6ms)
+Completed 200 OK in 505ms (Views: 458.7ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/heroines" for 127.0.0.1 at 2020-04-09 12:42:44 -0500
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9yuWgNJz5Dg1S2hfiOGjkER9u1gaKKw1miupQ8OtgN491elLtY+kj5UzwC5diRKpAbULdveoizkrB/J8fTPb3w==", "heroine"=>{"name"=>"Bob", "super_name"=>"Bobby", "powers"=>"super human senses"}, "commit"=>"Create Heroine"}
+Completed 500 Internal Server Error in 27108ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Power(#70308506854340) expected, got "super human senses" which is an instance of String(#70308501749240)):
+  
+app/controllers/heroines_controller.rb:19:in `create'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/heroines/new" for 127.0.0.1 at 2020-04-09 12:44:44 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  [1m[36mPower Load (0.7ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  Rendered heroines/new.html.erb within layouts/application (88.5ms)
+Completed 200 OK in 519ms (Views: 462.4ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/heroines" for 127.0.0.1 at 2020-04-09 12:44:49 -0500
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XIxAynSTxik/qIDQtUtk8MP9mMqL9+qAPFjrkCyp9qaWcj8BE2+Gnp/QKKFgI9XJhjUo5GZ3zYyNdLCvkjetpw==", "heroine"=>{"name"=>"dsafg", "super_name"=>"dsf", "powers"=>"flight"}, "commit"=>"Create Heroine"}
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."name" = ? LIMIT ?[0m  [["name", "flight"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "dsafg"], ["super_name", "dsf"], ["created_at", "2020-04-09 17:44:49.864677"], ["updated_at", "2020-04-09 17:44:49.864677"]]
+  [1m[35mSQL (15.8ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 11], ["power_id", 2], ["created_at", "2020-04-09 17:44:49.868592"], ["updated_at", "2020-04-09 17:44:49.868592"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/heroines/11
+Completed 302 Found in 85ms (ActiveRecord: 21.9ms)
+
+
+Started GET "/heroines/11" for 127.0.0.1 at 2020-04-09 12:44:49 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mHeroine Load (0.5ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 77ms (Views: 68.4ms | ActiveRecord: 0.5ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/heroines/new" for 127.0.0.1 at 2020-04-09 12:45:13 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  Rendered heroines/new.html.erb within layouts/application (68.5ms)
+Completed 200 OK in 443ms (Views: 398.5ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/heroines" for 127.0.0.1 at 2020-04-09 12:45:19 -0500
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7qrR50Gbmy85wb7n5+zoTVv1tVzp04xLc26L1mCkLXYkVK4sJmfbmJm5FpYyhFl0Hj0FcgRTq0fCQtDp3jp2dw==", "heroine"=>{"name"=>"sdaf", "super_name"=>"dsfgg", "powers"=>"super strength"}, "commit"=>"Create Heroine"}
+  [1m[36mPower Load (0.6ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."name" = ? LIMIT ?[0m  [["name", "super strength"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "sdaf"], ["super_name", "dsfgg"], ["created_at", "2020-04-09 17:45:19.162955"], ["updated_at", "2020-04-09 17:45:19.162955"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 12], ["power_id", 1], ["created_at", "2020-04-09 17:45:19.165203"], ["updated_at", "2020-04-09 17:45:19.165203"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/heroines/12
+Completed 302 Found in 19311ms (ActiveRecord: 4.7ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/heroines/new" for 127.0.0.1 at 2020-04-09 12:51:53 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  [1m[36mPower Load (0.7ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  Rendered heroines/new.html.erb within layouts/application (72.4ms)
+Completed 200 OK in 483ms (Views: 444.6ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/heroines" for 127.0.0.1 at 2020-04-09 12:52:08 -0500
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xb6q53Ipmxbqg2ZJ8qA5hvy0wplIfLdjrYnHk+XKV4gPQNUsFdXboUr7zjgnyIi/uXxyt6X8kG8cpZysW1QMiQ==", "heroine"=>{"name"=>"Bob", "super_name"=>"Boby", "powers"=>"super human senses"}, "commit"=>"Create Heroine"}
+  [1m[36mPower Load (0.4ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."name" = ? LIMIT ?[0m  [["name", "super human senses"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHeroine Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "heroines" WHERE "heroines"."super_name" = ? LIMIT ?[0m  [["super_name", "Boby"], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Bob"], ["super_name", "Boby"], ["created_at", "2020-04-09 17:52:08.110475"], ["updated_at", "2020-04-09 17:52:08.110475"]]
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 13], ["power_id", 3], ["created_at", "2020-04-09 17:52:08.115180"], ["updated_at", "2020-04-09 17:52:08.115180"]]
+  [1m[35m (16.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/heroines/13
+Completed 302 Found in 118ms (ActiveRecord: 22.2ms)
+
+
+Started GET "/heroines/13" for 127.0.0.1 at 2020-04-09 12:52:08 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mHeroine Load (0.6ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 90ms (Views: 76.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/heroines/new" for 127.0.0.1 at 2020-04-09 12:52:13 -0500
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  Rendered heroines/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 53ms (Views: 50.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/heroines" for 127.0.0.1 at 2020-04-09 12:52:18 -0500
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I/BHJucKgUUA3znoSB/7t6OPBmCVGXicbxgRb8BTO0rpDjjtgPbB8qCnkZmdd0qO5ke2TniZX5DeNEpQfs1gSw==", "heroine"=>{"name"=>"Bob", "super_name"=>"Boby", "powers"=>"flight"}, "commit"=>"Create Heroine"}
+  [1m[36mPower Load (0.5ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."name" = ? LIMIT ?[0m  [["name", "flight"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHeroine Exists (1.3ms)[0m  [1m[34mSELECT  1 AS one FROM "heroines" WHERE "heroines"."super_name" = ? LIMIT ?[0m  [["super_name", "Boby"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"heroines", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/heroines_controller.rb:21:in `create'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/heroines/new" for 127.0.0.1 at 2020-04-09 12:53:46 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  Rendered heroines/new.html.erb within layouts/application (65.2ms)
+Completed 200 OK in 466ms (Views: 430.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/heroines" for 127.0.0.1 at 2020-04-09 12:53:52 -0500
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.6ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 63ms (Views: 57.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/heroines/new" for 127.0.0.1 at 2020-04-09 12:53:57 -0500
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  [1m[36mPower Load (1.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  Rendered heroines/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 72ms (Views: 68.6ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/heroines" for 127.0.0.1 at 2020-04-09 12:54:04 -0500
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U56xw/08k6Kk02RTthehOp4C2QGOHlffBmnh0QaDdFKZYM4ImsDTFQSrzCJjfxAD28ppL2OecNO3RbruuB0vUw==", "heroine"=>{"name"=>"hess", "super_name"=>"Ms. Marvel", "powers"=>"flight"}, "commit"=>"Create Heroine"}
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."name" = ? LIMIT ?[0m  [["name", "flight"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHeroine Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "heroines" WHERE "heroines"."super_name" = ? LIMIT ?[0m  [["super_name", "Ms. Marvel"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering heroines/new.html.erb within layouts/application
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  Rendered heroines/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 198ms (Views: 119.8ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/heroines" for 127.0.0.1 at 2020-04-09 12:54:38 -0500
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VuE3jyS73FEnegezJaQRuczdt1mz3lvDXQ9ubxZZxo6cH0hEQ0ec5ocCr8LwzKCAiRUHd15efM/sIzVQqMedjw==", "heroine"=>{"name"=>"", "super_name"=>"Ms. Marvel", "powers"=>"super strength"}, "commit"=>"Create Heroine"}
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."name" = ? LIMIT ?[0m  [["name", "super strength"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHeroine Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "heroines" WHERE "heroines"."super_name" = ? LIMIT ?[0m  [["super_name", "Ms. Marvel"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering heroines/new.html.erb within layouts/application
+  [1m[36mPower Load (1.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  Rendered heroines/new.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 84ms (Views: 73.7ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/heroines" for 127.0.0.1 at 2020-04-09 12:54:43 -0500
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/uSIhT19/lbeoMZuESI1+RgE3y9hNC+55RlFyGP1QJM0GvdOWoG+4X7Ybh/ESoTAXcxvAYy0CLVUNR733Wsbkg==", "heroine"=>{"name"=>"", "super_name"=>"", "powers"=>"super strength"}, "commit"=>"Create Heroine"}
+  [1m[36mPower Load (1.8ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."name" = ? LIMIT ?[0m  [["name", "super strength"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHeroine Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "heroines" WHERE "heroines"."super_name" = ? LIMIT ?[0m  [["super_name", ""], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  Rendering heroines/new.html.erb within layouts/application
+  [1m[36mPower Load (0.9ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  Rendered heroines/new.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 137ms (Views: 108.1ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/heroines" for 127.0.0.1 at 2020-04-09 12:54:57 -0500
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q6o/2pSO69ocZETIXC9a06ePTPd9kKz0YCLZCNbaLB5hVEAR83Krbbwc7LmJR+vq4kf82ZAQi/jRDoI3aER3Hw==", "heroine"=>{"name"=>"dasfdsa", "super_name"=>"fdfdf", "powers"=>"super strength"}, "commit"=>"Create Heroine"}
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."name" = ? LIMIT ?[0m  [["name", "super strength"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mHeroine Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "heroines" WHERE "heroines"."super_name" = ? LIMIT ?[0m  [["super_name", "fdfdf"], ["LIMIT", 1]]
+  [1m[35mSQL (1.6ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "dasfdsa"], ["super_name", "fdfdf"], ["created_at", "2020-04-09 17:54:57.153646"], ["updated_at", "2020-04-09 17:54:57.153646"]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 14], ["power_id", 1], ["created_at", "2020-04-09 17:54:57.157866"], ["updated_at", "2020-04-09 17:54:57.157866"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/heroines/14
+Completed 302 Found in 18ms (ActiveRecord: 5.3ms)
+
+
+Started GET "/heroines/14" for 127.0.0.1 at 2020-04-09 12:54:57 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 61ms (Views: 55.6ms | ActiveRecord: 0.3ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/heroines" for 127.0.0.1 at 2020-04-09 12:56:12 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 360ms (Views: 329.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/heroines/5" for 127.0.0.1 at 2020-04-09 12:56:14 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mHeroine Load (0.6ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+Started GET "/heroines/5" for 127.0.0.1 at 2020-04-09 12:57:14 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/heroines/5" for 127.0.0.1 at 2020-04-09 13:02:58 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mHeroine Load (0.5ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Started GET "/heroines/5" for 127.0.0.1 at 2020-04-09 13:02:59 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/heroines/5" for 127.0.0.1 at 2020-04-09 13:04:46 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mHeroine Load (1.1ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 23071ms (Views: 351.7ms | ActiveRecord: 4.2ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mPower Load (0.8ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ? LIMIT ?[0m  [["heroine_id", 5], ["LIMIT", 11]]
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ? LIMIT ?[0m  [["heroine_id", 5], ["LIMIT", 11]]
+  [1m[36mHeroine Load (0.5ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" ORDER BY "heroines"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" ORDER BY "heroines"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPower Load (2.5ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ? LIMIT ?[0m  [["heroine_id", 14], ["LIMIT", 11]]
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/heroines/5" for 127.0.0.1 at 2020-04-09 13:07:36 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mPower Load (0.9ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 7]]
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 7]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 55707ms (Views: 337.4ms | ActiveRecord: 4.2ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/heroines/5" for 127.0.0.1 at 2020-04-09 13:08:40 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 5]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 111689ms (Views: 365.9ms | ActiveRecord: 2.1ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/heroines/5" for 127.0.0.1 at 2020-04-09 13:10:47 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mHeroine Load (1.0ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (0.7ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 5]]
+  Rendered heroines/show.html.erb within layouts/application (68.1ms)
+Completed 200 OK in 4224ms (Views: 434.2ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/heroines/11" for 127.0.0.1 at 2020-04-09 13:11:07 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mHeroine Load (0.8ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (2.3ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 11]]
+  Rendered heroines/show.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 3062ms (Views: 68.2ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/powers/2" for 127.0.0.1 at 2020-04-09 13:11:32 -0500
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering powers/show.html.erb within layouts/application
+  Rendered powers/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 39ms (Views: 30.1ms | ActiveRecord: 0.3ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/heroines/11" for 127.0.0.1 at 2020-04-09 13:12:25 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mHeroine Load (0.9ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (2.3ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 11]]
+  Rendered heroines/show.html.erb within layouts/application (57627.5ms)
+Completed 200 OK in 58068ms (Views: 58003.2ms | ActiveRecord: 5.0ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/heroines/11" for 127.0.0.1 at 2020-04-09 13:13:53 -0500
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mHeroine Load (0.8ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (1.4ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 11]]
+  Rendered heroines/show.html.erb within layouts/application (97568.6ms)
+Completed 200 OK in 98158ms (Views: 97931.7ms | ActiveRecord: 4.7ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/heroines/11" for 127.0.0.1 at 2020-04-09 13:15:44 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mHeroine Load (0.7ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (2.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 11]]
+  Rendered heroines/show.html.erb within layouts/application (146768.1ms)
+Completed 200 OK in 147170ms (Views: 147133.0ms | ActiveRecord: 4.8ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/heroines/11" for 127.0.0.1 at 2020-04-09 13:18:50 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mHeroine Load (0.9ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (2.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 11]]
+  Rendered heroines/show.html.erb within layouts/application (64.2ms)
+Completed 200 OK in 464ms (Views: 423.2ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/powers/2" for 127.0.0.1 at 2020-04-09 13:18:59 -0500
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPower Load (1.5ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering powers/show.html.erb within layouts/application
+  Rendered powers/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 96ms (Views: 81.7ms | ActiveRecord: 5.4ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/powers/2/edit" for 127.0.0.1 at 2020-04-09 13:35:47 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PowersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPower Load (0.7ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering powers/edit.html.erb within layouts/application
+  Rendered powers/edit.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 1.7ms)
+
+
+  
+SyntaxError (/Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/app/views/powers/edit.html.erb:15: syntax error, unexpected end-of-input, expecting end):
+  
+app/views/powers/edit.html.erb:15: syntax error, unexpected end-of-input, expecting end
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/powers/2/edit" for 127.0.0.1 at 2020-04-09 13:36:19 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PowersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPower Load (1.3ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering powers/edit.html.erb within layouts/application
+  [1m[36mHeroine Load (1.0ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  [1m[36mHeroine Load (1.5ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 2]]
+  Rendered powers/edit.html.erb within layouts/application (87.0ms)
+Completed 200 OK in 468ms (Views: 429.9ms | ActiveRecord: 5.9ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/powers/2/edit" for 127.0.0.1 at 2020-04-09 13:37:02 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PowersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPower Load (0.8ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering powers/edit.html.erb within layouts/application
+  [1m[36mHeroine Load (1.0ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  [1m[36mHeroine Load (1.7ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 2]]
+  Rendered powers/edit.html.erb within layouts/application (43832.9ms)
+Completed 200 OK in 44264ms (Views: 44213.6ms | ActiveRecord: 6.9ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/powers/2/edit" for 127.0.0.1 at 2020-04-09 13:38:02 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PowersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPower Load (1.1ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering powers/edit.html.erb within layouts/application
+  [1m[36mHeroine Load (0.7ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 2]]
+  Rendered powers/edit.html.erb within layouts/application (72.0ms)
+Completed 200 OK in 392ms (Views: 358.8ms | ActiveRecord: 3.9ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/powers/2/edit" for 127.0.0.1 at 2020-04-09 13:38:32 -0500
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PowersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPower Load (0.7ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering powers/edit.html.erb within layouts/application
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 2]]
+  Rendered powers/edit.html.erb within layouts/application (82.4ms)
+Completed 200 OK in 473ms (Views: 429.6ms | ActiveRecord: 3.0ms)
+
+
+Started PATCH "/powers/2" for 127.0.0.1 at 2020-04-09 13:38:39 -0500
+Processing by PowersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3Fef4QAbA4CXbZFFPCtEBDbol/bq54laJqFF7fE7p9kWqeAqZ+dDNzcVOTTpQ/U9cyAn2AdnrlaXjR7ST6X82A==", "power"=>{"name"=>"flight", "description"=>"gives the wielder the ability to fly through the skies at supersonic speed", "heroines"=>"Bob"}, "commit"=>"Update Power", "id"=>"2"}
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.9ms)
+
+
+  
+NoMethodError (undefined method `each' for "Bob":String):
+  
+app/controllers/powers_controller.rb:29:in `update'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started PATCH "/powers/2" for 127.0.0.1 at 2020-04-09 13:39:32 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PowersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3Fef4QAbA4CXbZFFPCtEBDbol/bq54laJqFF7fE7p9kWqeAqZ+dDNzcVOTTpQ/U9cyAn2AdnrlaXjR7ST6X82A==", "power"=>{"name"=>"flight", "description"=>"gives the wielder the ability to fly through the skies at supersonic speed", "heroines"=>"dasfdsa"}, "commit"=>"Update Power", "id"=>"2"}
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 2]]
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."name" = ? LIMIT ?[0m  [["name", "dasfdsa"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 817502ms (ActiveRecord: 3.2ms)
+
+
+  
+NoMethodError (undefined method `each' for "dasfdsa":String):
+  
+app/controllers/powers_controller.rb:30:in `update'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/powers/2" for 127.0.0.1 at 2020-04-09 13:53:31 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPower Load (0.9ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering powers/show.html.erb within layouts/application
+  Rendered powers/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 369ms (Views: 334.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/powers/2/edit" for 127.0.0.1 at 2020-04-09 13:53:36 -0500
+Processing by PowersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering powers/edit.html.erb within layouts/application
+  [1m[36mHeroine Load (0.8ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  [1m[36mHeroine Load (1.4ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 2]]
+  Rendered powers/edit.html.erb within layouts/application (135.8ms)
+Completed 200 OK in 181ms (Views: 168.5ms | ActiveRecord: 4.6ms)
+
+
+Started PATCH "/powers/2" for 127.0.0.1 at 2020-04-09 13:53:41 -0500
+Processing by PowersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BvYTJtqAyrSasVKR4qmPdHRi9IIV+5ufIjD8jeYHV8nMCGztvXyKAzrJ+uA3wT5NMapErPh7vJOTHKeyWJkMyA==", "power"=>{"name"=>"flight", "description"=>"gives the wielder the ability to fly through the skies at supersonic speed", "heroines"=>"Wanda Maximoff"}, "commit"=>"Update Power", "id"=>"2"}
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."name" = ? LIMIT ?[0m  [["name", "Wanda Maximoff"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 5], ["power_id", 2], ["created_at", "2020-04-09 18:53:41.443109"], ["updated_at", "2020-04-09 18:53:41.443109"]]
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 5.8ms)
+
+
+  
+NoMethodError (undefined method `each' for "Wanda Maximoff":String):
+  
+app/controllers/powers_controller.rb:31:in `update'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/powers/2/edit" for 127.0.0.1 at 2020-04-09 13:54:16 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PowersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering powers/edit.html.erb within layouts/application
+  [1m[36mHeroine Load (0.5ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 2]]
+  Rendered powers/edit.html.erb within layouts/application (173.5ms)
+Completed 200 OK in 637ms (Views: 594.1ms | ActiveRecord: 3.6ms)
+
+
+Started PATCH "/powers/2" for 127.0.0.1 at 2020-04-09 13:54:20 -0500
+Processing by PowersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SuLrnx/cSKfzHrcqsTk4ylfQAoSVBZnJ5j/HtVAwswWAHJRUeCAIEFNmH1tkUYnzEhiyqniFvsVXE5yK7q7oBA==", "power"=>{"name"=>"flight", "description"=>"gives the wielder the ability to fly through the skies at supersonic speed", "heroines"=>"Jean Grey"}, "commit"=>"Update Power", "id"=>"2"}
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."name" = ? LIMIT ?[0m  [["name", "Jean Grey"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 7], ["power_id", 2], ["created_at", "2020-04-09 18:54:20.495213"], ["updated_at", "2020-04-09 18:54:20.495213"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Unpermitted parameter: :heroines
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 2]]
+  [1m[36mPower Load (0.4ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mCACHE Power Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mCACHE Power Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mCACHE Power Load (0.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mCACHE Heroine Load (0.0ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 2]]
+Redirected to http://localhost:3000/powers/2
+Completed 302 Found in 92236ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/powers/2" for 127.0.0.1 at 2020-04-09 13:55:52 -0500
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering powers/show.html.erb within layouts/application
+  Rendered powers/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 126ms (Views: 103.5ms | ActiveRecord: 1.5ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/powers/2/edit" for 127.0.0.1 at 2020-04-09 14:14:03 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PowersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPower Load (1.5ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering powers/edit.html.erb within layouts/application
+  [1m[36mHeroine Load (0.8ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered powers/edit.html.erb within layouts/application (37.8ms)
+Completed 500 Internal Server Error in 99ms (ActiveRecord: 3.9ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 2, expected 4..6)):
+     6:     <%= f.text_area :description %> <br>
+     7: 
+     8:     <label> Select Heroine: </label><br>
+     9:     <%= f.collection_check_boxes :heroines, Heroine.all.collect { |heroine| heroine.name} %><br>
+    10: 
+    11:     <%= f.submit %>
+    12: <% end %>
+  
+app/views/powers/edit.html.erb:9:in `block in _app_views_powers_edit_html_erb___3979937042746204933_70341732785440'
+app/views/powers/edit.html.erb:1:in `_app_views_powers_edit_html_erb___3979937042746204933_70341732785440'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/powers/2/edit" for 127.0.0.1 at 2020-04-09 14:16:46 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PowersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPower Load (0.9ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering powers/edit.html.erb within layouts/application
+  Rendered powers/edit.html.erb within layouts/application (23.5ms)
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 4..6)):
+     6:     <%= f.text_area :description %> <br>
+     7: 
+     8:     <label> Select Heroine: </label><br>
+     9:     <%= f.collection_check_boxes :heroines, Heroine.all, :id %><br>
+    10: 
+    11:     <%= f.submit %>
+    12: <% end %>
+  
+app/views/powers/edit.html.erb:9:in `block in _app_views_powers_edit_html_erb__3978921582125511766_70241015981420'
+app/views/powers/edit.html.erb:1:in `_app_views_powers_edit_html_erb__3978921582125511766_70241015981420'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/powers/2/edit" for 127.0.0.1 at 2020-04-09 14:17:28 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PowersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering powers/edit.html.erb within layouts/application
+  [1m[36mHeroine Load (0.9ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered powers/edit.html.erb within layouts/application (180.5ms)
+Completed 200 OK in 554ms (Views: 513.9ms | ActiveRecord: 3.2ms)
+
+
+Started PATCH "/powers/2" for 127.0.0.1 at 2020-04-09 14:17:32 -0500
+Processing by PowersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wrgfl6aKKJ1UodfHYY0Mi75YwcnTQawem8Luphg4hQAIRmBcwXZoKvTZf7a05b2y+5Bx5z7BixIq7rWZpqbeAQ==", "power"=>{"name"=>"flight", "description"=>"gives the wielder the ability to fly through the skies at supersonic speed", "heroines"=>["", "5", "7"]}, "commit"=>"Update Power", "id"=>"2"}
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Unpermitted parameter: :heroines
+  [1m[36mHeroine Load (1.6ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 2]]
+Unpermitted parameter: :heroines
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Heroine Load (0.1ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE Heroine Load (0.0ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE Heroine Load (0.0ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Heroine Load (0.0ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE Heroine Load (0.0ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Heroine Load (0.0ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Heroine Load (0.0ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE Heroine Load (0.0ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mCACHE Heroine Load (0.1ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE Heroine Load (0.0ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCACHE Heroine Load (0.0ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."name" IN ('5', '7') LIMIT ?[0m  [["LIMIT", 1]]
+Completed 500 Internal Server Error in 835425ms (ActiveRecord: 4.8ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Heroine(#70366079999400) expected, got nil which is an instance of NilClass(#70366068588100)):
+  
+app/controllers/powers_controller.rb:31:in `update'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/powers/2" for 127.0.0.1 at 2020-04-09 14:31:57 -0500
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPower Load (0.9ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering powers/show.html.erb within layouts/application
+  Rendered powers/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 369ms (Views: 328.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/powers/2/edit" for 127.0.0.1 at 2020-04-09 14:32:02 -0500
+Processing by PowersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPower Load (0.5ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering powers/edit.html.erb within layouts/application
+  [1m[36mHeroine Load (0.7ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered powers/edit.html.erb within layouts/application (179.6ms)
+Completed 200 OK in 217ms (Views: 203.5ms | ActiveRecord: 4.6ms)
+
+
+Started PATCH "/powers/2" for 127.0.0.1 at 2020-04-09 14:32:06 -0500
+Processing by PowersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZJD7Ei/zbBpBXTazkdcUWlV2s13RO5xe/Hf/1zAyX/muboTZSA8sreElnsJEv6VjEL4Dczy7u1JNW6TojqwE+A==", "power"=>{"name"=>"flight", "description"=>"gives the wielder the ability to fly through the skies at supersonic speed", "heroines"=>["", "2", "3"]}, "commit"=>"Update Power", "id"=>"2"}
+  [1m[36mPower Load (0.4ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mHeroine Load (0.6ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Unpermitted parameter: :heroines
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mHeroine Load (1.4ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 2]]
+  [1m[36mCACHE Heroine Load (0.0ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Heroine Load (0.0ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Heroine Load (0.0ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Heroine Load (0.0ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://localhost:3000/powers/2
+Completed 302 Found in 182492ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/powers/2" for 127.0.0.1 at 2020-04-09 14:35:08 -0500
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering powers/show.html.erb within layouts/application
+  Rendered powers/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 81ms (Views: 55.6ms | ActiveRecord: 1.4ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/powers/2/edit" for 127.0.0.1 at 2020-04-09 14:35:30 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PowersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPower Load (0.4ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering powers/edit.html.erb within layouts/application
+  [1m[36mHeroine Load (1.9ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered powers/edit.html.erb within layouts/application (175.3ms)
+Completed 200 OK in 600ms (Views: 554.9ms | ActiveRecord: 3.8ms)
+
+
+Started PATCH "/powers/2" for 127.0.0.1 at 2020-04-09 14:35:37 -0500
+Processing by PowersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rKE6U84mafrxb/bJACWBqtQMfgkrV+7uuoR8qfi/PilmX0WYqdopTVEXXrjVTTCTkcTOJ8bXyeILqCeWRiFlKA==", "power"=>{"name"=>"flight", "description"=>"gives the wielder the ability to fly through the skies at supersonic speed", "heroines"=>["", "12", "14"]}, "commit"=>"Update Power", "id"=>"2"}
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mHeroine Load (0.6ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+Unpermitted parameter: :heroines
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/powers/2
+Completed 302 Found in 12222ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/powers/2" for 127.0.0.1 at 2020-04-09 14:35:49 -0500
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering powers/show.html.erb within layouts/application
+  Rendered powers/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 47ms (Views: 43.8ms | ActiveRecord: 0.3ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/powers/3/edit" for 127.0.0.1 at 2020-04-09 14:36:25 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PowersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering powers/edit.html.erb within layouts/application
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered powers/edit.html.erb within layouts/application (129.0ms)
+Completed 200 OK in 430ms (Views: 401.4ms | ActiveRecord: 2.0ms)
+
+
+Started PATCH "/powers/3" for 127.0.0.1 at 2020-04-09 14:36:28 -0500
+Processing by PowersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"smzVzYYLLsEEnUTmJGypqWs439aXObKPCMc1Fax5k7d4kqoG4fdudqTl7JfxBBiQLvBv+Hq5lYO5624qEufItg==", "power"=>{"name"=>"super human senses", "description"=>"allows the wielder to use her senses at a super-human level", "heroines"=>["", "3", "4"]}, "commit"=>"Update Power", "id"=>"3"}
+  [1m[36mPower Load (0.4ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mHeroine Load (1.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Unpermitted parameter: :heroines
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mHeroine Load (1.5ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 3]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 3], ["power_id", 3], ["created_at", "2020-04-09 19:39:35.775970"], ["updated_at", "2020-04-09 19:39:35.775970"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 4], ["power_id", 3], ["created_at", "2020-04-09 19:39:35.781528"], ["updated_at", "2020-04-09 19:39:35.781528"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[31mDELETE FROM "heroine_powers" WHERE "heroine_powers"."power_id" = ? AND "heroine_powers"."heroine_id" = 13[0m  [["power_id", 3]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/powers/3
+Completed 302 Found in 229111ms (ActiveRecord: 11.5ms)
+
+
+Started GET "/powers/3" for 127.0.0.1 at 2020-04-09 14:40:17 -0500
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering powers/show.html.erb within layouts/application
+  Rendered powers/show.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 116ms (Views: 77.0ms | ActiveRecord: 1.8ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/powers/3/edit" for 127.0.0.1 at 2020-04-09 14:40:43 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PowersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering powers/edit.html.erb within layouts/application
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered powers/edit.html.erb within layouts/application (157.6ms)
+Completed 200 OK in 515ms (Views: 482.0ms | ActiveRecord: 1.6ms)
+
+
+Started PATCH "/powers/3" for 127.0.0.1 at 2020-04-09 14:40:47 -0500
+Processing by PowersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pOROD0GifeJ7e/sqR2ZoPZoBdliGNlPZMGeGKm30S39uGjHEJl49VdsDU1uSDtkE38nGdmu2dNWBS90V02oQfg==", "power"=>{"name"=>"super human senses", "description"=>"allows the wielder to use her senses at a super-human level", "heroines"=>["", "6", "7"]}, "commit"=>"Update Power", "id"=>"3"}
+  [1m[36mPower Load (0.5ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (1.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 6], ["power_id", 3], ["created_at", "2020-04-09 19:40:47.562560"], ["updated_at", "2020-04-09 19:40:47.562560"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 7], ["power_id", 3], ["created_at", "2020-04-09 19:40:47.568181"], ["updated_at", "2020-04-09 19:40:47.568181"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 7.2ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Heroine(#70260119026780) expected, got "6" which is an instance of String(#70260124622280)):
+  
+app/controllers/powers_controller.rb:35:in `update'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/powers/3" for 127.0.0.1 at 2020-04-09 14:42:37 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering powers/show.html.erb within layouts/application
+  Rendered powers/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 399ms (Views: 355.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/powers/3/edit" for 127.0.0.1 at 2020-04-09 14:42:40 -0500
+Processing by PowersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering powers/edit.html.erb within layouts/application
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered powers/edit.html.erb within layouts/application (217.7ms)
+Completed 200 OK in 268ms (Views: 249.3ms | ActiveRecord: 5.7ms)
+
+
+Started PATCH "/powers/3" for 127.0.0.1 at 2020-04-09 14:42:45 -0500
+Processing by PowersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0kW1w26q/H4ImGvRXTE+9kGG2SZiaPgjkcohZ4/Didv4i3Z7T6t5yUo+p5m8TzGspEOrA84xay1UNOBEX4V4EQ==", "power"=>{"name"=>"super human senses", "description"=>"allows the wielder to use her senses at a super-human level", "heroines"=>["", "2", "3"]}, "commit"=>"Update Power", "id"=>"3"}
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mHeroine Load (1.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mHeroine Load (0.6ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 2], ["power_id", 3], ["created_at", "2020-04-09 19:42:45.711153"], ["updated_at", "2020-04-09 19:42:45.711153"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 3], ["power_id", 3], ["created_at", "2020-04-09 19:42:45.715613"], ["updated_at", "2020-04-09 19:42:45.715613"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Unpermitted parameter: :heroines
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/powers/3
+Completed 302 Found in 51ms (ActiveRecord: 5.1ms)
+
+
+Started GET "/powers/3" for 127.0.0.1 at 2020-04-09 14:42:45 -0500
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering powers/show.html.erb within layouts/application
+  Rendered powers/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 46ms (Views: 43.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/powers/3/edit" for 127.0.0.1 at 2020-04-09 14:42:47 -0500
+Processing by PowersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering powers/edit.html.erb within layouts/application
+  [1m[36mHeroine Load (0.6ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered powers/edit.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 76ms (Views: 67.4ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/powers/3" for 127.0.0.1 at 2020-04-09 14:42:49 -0500
+Processing by PowersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3Cuv8HY0pj+Uq+6jLHpJTwUKA8pHuGvsGibFXb/4E9j25WxIVzUjiNYNIuvNBEYV4M9x7+vh+OLf2AR+b77iEg==", "power"=>{"name"=>"super human senses", "description"=>"allows the wielder to use her senses at a super-human level", "heroines"=>["", "2", "3"]}, "commit"=>"Update Power", "id"=>"3"}
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 2], ["power_id", 3], ["created_at", "2020-04-09 19:42:49.716827"], ["updated_at", "2020-04-09 19:42:49.716827"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 3], ["power_id", 3], ["created_at", "2020-04-09 19:42:49.723965"], ["updated_at", "2020-04-09 19:42:49.723965"]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+Unpermitted parameter: :heroines
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/powers/3
+Completed 302 Found in 32ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/powers/3" for 127.0.0.1 at 2020-04-09 14:42:49 -0500
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPower Load (0.4ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering powers/show.html.erb within layouts/application
+  Rendered powers/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 51ms (Views: 45.5ms | ActiveRecord: 0.4ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/kyleriner/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/powers" for 127.0.0.1 at 2020-04-09 14:44:03 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PowersController#index as HTML
+  Rendering powers/index.html.erb within layouts/application
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 2]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 3]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 4]]
+  Rendered powers/index.html.erb within layouts/application (73.9ms)
+Completed 200 OK in 429ms (Views: 401.7ms | ActiveRecord: 2.7ms)
+
+
