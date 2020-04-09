@@ -1,0 +1,12 @@
+<h2>About This Power</h2>
+
+<ul>
+  <% @power.each do |power| %>
+    <li>
+      <%= power.name %>
+      <%= power.description %>
+    </li>
+    <br>
+    <%= link_to "Back", (@back) %>
+  <% end %>
+</ul>
