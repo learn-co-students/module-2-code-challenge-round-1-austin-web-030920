@@ -1,2 +1,0 @@
-class Heroine < ApplicationRecord
-end
