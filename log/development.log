@@ -1,0 +1,2579 @@
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/" for ::1 at 2020-04-09 12:39:55 -0500
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.7) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.7) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/heroines" for ::1 at 2020-04-09 12:40:03 -0500
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.7) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.7) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateHeroines (20170725185425)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "heroines" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "super_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170725185425"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreatePowers (20170725185638)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "powers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170725185638"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-04-09 17:40:45.823095"], ["updated_at", "2020-04-09 17:40:45.823095"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mHeroine Load (0.1ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "super strength"], ["description", "gives the wielder super-human strengths"], ["created_at", "2020-04-09 17:40:47.831330"], ["updated_at", "2020-04-09 17:40:47.831330"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "flight"], ["description", "gives the wielder the ability to fly through the skies at supersonic speed"], ["created_at", "2020-04-09 17:40:47.834726"], ["updated_at", "2020-04-09 17:40:47.834726"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "super human senses"], ["description", "allows the wielder to use her senses at a super-human level"], ["created_at", "2020-04-09 17:40:47.836619"], ["updated_at", "2020-04-09 17:40:47.836619"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "elasticity"], ["description", "can stretch the human body to extreme lengths"], ["created_at", "2020-04-09 17:40:47.838403"], ["updated_at", "2020-04-09 17:40:47.838403"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kamala Khan"], ["super_name", "Ms. Marvel"], ["created_at", "2020-04-09 17:40:47.843989"], ["updated_at", "2020-04-09 17:40:47.843989"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Doreen Green"], ["super_name", "Squirrel Girl"], ["created_at", "2020-04-09 17:40:47.846059"], ["updated_at", "2020-04-09 17:40:47.846059"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Gwen Stacy"], ["super_name", "Spider-Gwen"], ["created_at", "2020-04-09 17:40:47.847956"], ["updated_at", "2020-04-09 17:40:47.847956"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Janet Van Dyne"], ["super_name", "The Wasp"], ["created_at", "2020-04-09 17:40:47.849787"], ["updated_at", "2020-04-09 17:40:47.849787"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Wanda Maximoff"], ["super_name", "Scarlet Witch"], ["created_at", "2020-04-09 17:40:47.851595"], ["updated_at", "2020-04-09 17:40:47.851595"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Carol Danvers"], ["super_name", "Captain Marvel"], ["created_at", "2020-04-09 17:40:47.853437"], ["updated_at", "2020-04-09 17:40:47.853437"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Jean Grey"], ["super_name", "Dark Phoenix"], ["created_at", "2020-04-09 17:40:47.855489"], ["updated_at", "2020-04-09 17:40:47.855489"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ororo Munroe"], ["super_name", "Storm"], ["created_at", "2020-04-09 17:40:47.857452"], ["updated_at", "2020-04-09 17:40:47.857452"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kitty Pryde"], ["super_name", "Shadowcat"], ["created_at", "2020-04-09 17:40:47.859327"], ["updated_at", "2020-04-09 17:40:47.859327"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Elektra Natchios"], ["super_name", "Elektra"], ["created_at", "2020-04-09 17:40:47.861170"], ["updated_at", "2020-04-09 17:40:47.861170"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/heroines" for ::1 at 2020-04-09 12:41:04 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 822ms (Views: 810.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/heroines/1" for ::1 at 2020-04-09 12:41:13 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/heroines/1"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/heroines/new" for ::1 at 2020-04-09 12:59:42 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/heroines/new"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/heroines/new" for ::1 at 2020-04-09 12:59:44 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/heroines/new"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/heroines/new" for ::1 at 2020-04-09 12:59:45 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/heroines/new"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/heroines/new" for ::1 at 2020-04-09 13:00:14 -0500
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 334ms (Views: 304.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/heroines/new" for ::1 at 2020-04-09 13:00:27 -0500
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 34ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/heroines/new" for ::1 at 2020-04-09 13:01:51 -0500
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/_form.html.erb (7.4ms)
+  Rendered heroines/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 41ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/heroines/new" for ::1 at 2020-04-09 13:02:12 -0500
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/_form.html.erb (2.7ms)
+  Rendered heroines/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 38ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/heroines" for ::1 at 2020-04-09 13:02:21 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/heroines"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/heroines" for ::1 at 2020-04-09 13:02:33 -0500
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 33ms (Views: 29.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/1/edit" for ::1 at 2020-04-09 13:03:14 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/1/edit"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/1/edit" for ::1 at 2020-04-09 13:03:30 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/1/edit"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started PUT "/__web_console/repl_sessions/13e265a5ed40d9923d1c58c1bb3290f8" for ::1 at 2020-04-09 13:03:44 -0500
+Started PUT "/__web_console/repl_sessions/13e265a5ed40d9923d1c58c1bb3290f8" for ::1 at 2020-04-09 13:03:45 -0500
+Started PUT "/__web_console/repl_sessions/13e265a5ed40d9923d1c58c1bb3290f8" for ::1 at 2020-04-09 13:03:54 -0500
+Started PUT "/__web_console/repl_sessions/13e265a5ed40d9923d1c58c1bb3290f8" for ::1 at 2020-04-09 13:03:54 -0500
+  [1m[36mHeroine Load (0.1ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" LIMIT ?[0m  [["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/13e265a5ed40d9923d1c58c1bb3290f8" for ::1 at 2020-04-09 13:03:59 -0500
+Started PUT "/__web_console/repl_sessions/13e265a5ed40d9923d1c58c1bb3290f8" for ::1 at 2020-04-09 13:04:01 -0500
+Started GET "/1/edit" for ::1 at 2020-04-09 13:04:14 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/1/edit"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/1/edit" for ::1 at 2020-04-09 13:04:15 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/1/edit"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/1/edit" for ::1 at 2020-04-09 13:04:16 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/1/edit"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/1/edit" for ::1 at 2020-04-09 13:04:49 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/1/edit"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/heroines/1/edit" for ::1 at 2020-04-09 13:05:03 -0500
+Processing by HeroinesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/edit.html.erb within layouts/application
+  Rendered heroines/_form.html.erb (7.0ms)
+  Rendered heroines/edit.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 284ms (Views: 262.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/heroines/2/edit" for ::1 at 2020-04-09 13:05:12 -0500
+Processing by HeroinesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering heroines/edit.html.erb within layouts/application
+  Rendered heroines/_form.html.erb (8.2ms)
+  Rendered heroines/edit.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 108ms (Views: 100.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/heroines/3/edit" for ::1 at 2020-04-09 13:05:18 -0500
+Processing by HeroinesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering heroines/edit.html.erb within layouts/application
+  Rendered heroines/_form.html.erb (3.3ms)
+  Rendered heroines/edit.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 43ms (Views: 36.7ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/heroines/3" for ::1 at 2020-04-09 13:05:20 -0500
+Processing by HeroinesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kfehzYVrROJD3FljZUmsembAUdRtw3pn4gTB2DOv1cWzJ9etmbtm4MdS2WI4eh59DTpIyobcfOVBf0SBfZV8FA==", "heroine"=>{"name"=>"Gwen Stacy", "super_name"=>"Spider-Gwen"}, "commit"=>"Update Heroine", "id"=>"3"}
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/heroines/3
+Completed 302 Found in 7ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/heroines/3" for ::1 at 2020-04-09 13:05:20 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 44ms (Views: 41.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/heroines" for ::1 at 2020-04-09 13:09:26 -0500
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 45ms (Views: 38.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/heroines" for ::1 at 2020-04-09 13:10:23 -0500
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (253.2ms)
+Completed 500 Internal Server Error in 263ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `student' for #<#<Class:0x00007fcdc9094388>:0x00007fcdc5480310>):
+    21:   </tbody>
+    22: </table>
+    23: 
+    24: <!-- <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+  
+app/views/heroines/index.html.erb:24:in `_app_views_heroines_index_html_erb___4255459625668433798_70260877428140'
+Started GET "/heroines" for ::1 at 2020-04-09 13:10:34 -0500
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 43ms (Views: 37.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/heroines/1/edit" for ::1 at 2020-04-09 13:10:40 -0500
+Processing by HeroinesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/edit.html.erb within layouts/application
+  Rendered heroines/_form.html.erb (5.8ms)
+  Rendered heroines/edit.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 47ms (Views: 41.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/heroines/7/edit" for ::1 at 2020-04-09 13:10:42 -0500
+Processing by HeroinesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering heroines/edit.html.erb within layouts/application
+  Rendered heroines/_form.html.erb (5.5ms)
+  Rendered heroines/edit.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 47ms (Views: 38.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/heroines/7" for ::1 at 2020-04-09 13:10:48 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mHeroine Load (0.6ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 44ms (Views: 36.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/heroines/10" for ::1 at 2020-04-09 13:10:54 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 24ms (Views: 19.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/heroines/10" for ::1 at 2020-04-09 13:15:18 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"10"}
+Completed 500 Internal Server Error in 3ms
+
+
+  
+SyntaxError (/Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/app/models/heroine.rb:2: syntax error, unexpected true, expecting do or '{' or '('
+... validates :name, presence true, message: "can't be blank"
+...                           ^~~~
+/Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/app/models/heroine.rb:2: Can't assign to true
+... validates :name, presence true, message: "can't be blank"
+...                           ^~~~
+/Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/app/models/heroine.rb:3: syntax error, unexpected true, expecting do or '{' or '('
+...ates :super_name, presence true, message: "can't be blank"
+...                           ^~~~
+/Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/app/models/heroine.rb:3: Can't assign to true
+...ates :super_name, presence true, message: "can't be blank"
+...                           ^~~~):
+  
+app/models/heroine.rb:2: syntax error, unexpected true, expecting do or '{' or '('
+app/models/heroine.rb:2: Can't assign to true
+app/models/heroine.rb:3: syntax error, unexpected true, expecting do or '{' or '('
+app/models/heroine.rb:3: Can't assign to true
+app/controllers/heroines_controller.rb:52:in `find_heroine'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/heroines/10" for ::1 at 2020-04-09 13:16:17 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"10"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (Unknown validator: 'MessageValidator'):
+  
+app/models/heroine.rb:2:in `<class:Heroine>'
+app/models/heroine.rb:1:in `<top (required)>'
+app/controllers/heroines_controller.rb:52:in `find_heroine'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/heroines/10" for ::1 at 2020-04-09 13:17:20 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 250ms (Views: 210.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/heroines" for ::1 at 2020-04-09 13:17:25 -0500
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 50ms (Views: 45.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/heroines/new" for ::1 at 2020-04-09 13:17:40 -0500
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/_form.html.erb (35.1ms)
+  Rendered heroines/new.html.erb within layouts/application (37.8ms)
+Completed 200 OK in 78ms (Views: 74.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/heroines" for ::1 at 2020-04-09 13:17:41 -0500
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DaUISn9h6Tvg3ucZEyomulvGx64sIoVI9Cf7ZxRcsK4vdX4qY7HLOWRQZxhOGZS9MDzesMc9g8pXXH4+WmYZfw==", "heroine"=>{"name"=>"", "super_name"=>""}, "commit"=>"Create Heroine"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/_form.html.erb (9.9ms)
+  Rendered heroines/new.html.erb within layouts/application (11.8ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    10:         <div id="error_messages">
+    11:             <h3>Errors: </h3>
+    12:             <ul>
+    13:                 <% @person.errors.full_messages.each do |message| %>
+    14:                     <li><%= message %></li>
+    15:                 <% end %>
+    16:             </ul>
+  
+app/views/heroines/_form.html.erb:13:in `block in _app_views_heroines__form_html_erb___1995409784118943706_70311597841880'
+app/views/heroines/_form.html.erb:1:in `_app_views_heroines__form_html_erb___1995409784118943706_70311597841880'
+app/views/heroines/new.html.erb:2:in `_app_views_heroines_new_html_erb__3208252030587024996_70311561725920'
+app/controllers/heroines_controller.rb:25:in `create'
+Started GET "/heroines" for ::1 at 2020-04-09 13:19:48 -0500
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (1.9ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 53ms (Views: 48.6ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/heroines/new" for ::1 at 2020-04-09 13:19:52 -0500
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/_form.html.erb (6.3ms)
+  Rendered heroines/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 55ms (Views: 51.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/heroines" for ::1 at 2020-04-09 13:19:56 -0500
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oTZOV7CnSzsRwAecJUzwGK0Ei7NesWf79th87yZQoJ6D5jg3rHdpOZVOh514f0Ifxv6SrbWuYXlVo/m2aGoJTw==", "heroine"=>{"name"=>"", "super_name"=>""}, "commit"=>"Create Heroine"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fe562ea91c0>
+Did you mean?  try):
+  
+app/controllers/heroines_controller.rb:26:in `create'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started POST "/heroines" for ::1 at 2020-04-09 13:20:46 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oTZOV7CnSzsRwAecJUzwGK0Ei7NesWf79th87yZQoJ6D5jg3rHdpOZVOh514f0Ifxv6SrbWuYXlVo/m2aGoJTw==", "heroine"=>{"name"=>"", "super_name"=>""}, "commit"=>"Create Heroine"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/_form.html.erb (13.0ms)
+  Rendered heroines/new.html.erb within layouts/application (17.1ms)
+Completed 500 Internal Server Error in 10614ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    10:         <div id="error_messages">
+    11:             <h3>Errors: </h3>
+    12:             <ul>
+    13:                 <% @person.errors.full_messages.each do |message| %>
+    14:                     <li><%= message %></li>
+    15:                 <% end %>
+    16:             </ul>
+  
+app/views/heroines/_form.html.erb:13:in `block in _app_views_heroines__form_html_erb__4590918050716076823_70149515047900'
+app/views/heroines/_form.html.erb:1:in `_app_views_heroines__form_html_erb__4590918050716076823_70149515047900'
+app/views/heroines/new.html.erb:2:in `_app_views_heroines_new_html_erb__838956758571844089_70149517186640'
+app/controllers/heroines_controller.rb:27:in `create'
+Started GET "/heroines" for ::1 at 2020-04-09 13:21:01 -0500
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.1ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 284ms (Views: 280.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/heroines/new" for ::1 at 2020-04-09 13:21:06 -0500
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/_form.html.erb (5.0ms)
+  Rendered heroines/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 44ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/heroines" for ::1 at 2020-04-09 13:21:09 -0500
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Eah4qANQffxKxhDepXW5j3Kipzomkx4Ei7PwKswo95YzeA7IH4Bf/s5IkN/4RguIGVi+JM2MGIYoyHVzghJeRw==", "heroine"=>{"name"=>"", "super_name"=>""}, "commit"=>"Create Heroine"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/_form.html.erb (6.5ms)
+  Rendered heroines/new.html.erb within layouts/application (8.7ms)
+Completed 500 Internal Server Error in 144231ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    10:         <div id="error_messages">
+    11:             <h3>Errors: </h3>
+    12:             <ul>
+    13:                 <% @person.errors.full_messages.each do |message| %>
+    14:                     <li><%= message %></li>
+    15:                 <% end %>
+    16:             </ul>
+  
+app/views/heroines/_form.html.erb:13:in `block in _app_views_heroines__form_html_erb__4590918050716076823_70149555061180'
+app/views/heroines/_form.html.erb:1:in `_app_views_heroines__form_html_erb__4590918050716076823_70149555061180'
+app/views/heroines/new.html.erb:2:in `_app_views_heroines_new_html_erb__838956758571844089_70149555047300'
+app/controllers/heroines_controller.rb:27:in `create'
+Started GET "/heroines" for ::1 at 2020-04-09 13:23:38 -0500
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.5ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 36ms (Views: 32.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/heroines/new" for ::1 at 2020-04-09 13:23:42 -0500
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/_form.html.erb (2.8ms)
+  Rendered heroines/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 79ms (Views: 68.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/heroines" for ::1 at 2020-04-09 13:23:52 -0500
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w82S+3QLIgsWGNEflz6R1FNDFAkso6OFBsDtzfmD1DHhHeSbaNsACZKWUR7KDSPTOLkNF8e8pQelu2iUt7l94A==", "heroine"=>{"name"=>"Tester", "super_name"=>"TESTWOMAN"}, "commit"=>"Create Heroine"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Tester"], ["super_name", "TESTWOMAN"], ["created_at", "2020-04-09 18:23:52.419980"], ["updated_at", "2020-04-09 18:23:52.419980"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/heroines/11
+Completed 302 Found in 11ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/heroines/11" for ::1 at 2020-04-09 13:23:52 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 17ms (Views: 13.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/heroines" for ::1 at 2020-04-09 13:23:56 -0500
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 38ms (Views: 34.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/heroines/11/edit" for ::1 at 2020-04-09 13:24:00 -0500
+Processing by HeroinesController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mHeroine Load (0.8ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering heroines/edit.html.erb within layouts/application
+  Rendered heroines/_form.html.erb (8.3ms)
+  Rendered heroines/edit.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 63ms (Views: 53.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/heroines/new" for ::1 at 2020-04-09 13:25:29 -0500
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/_form.html.erb (3.6ms)
+  Rendered heroines/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 36ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/heroines" for ::1 at 2020-04-09 13:25:36 -0500
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K0wSC6e6bCpWubpgEMdOQQXOetf/ugXjGKaTiE+1BKoJnGRru2pOKNI3OmFN9PxGbjRjyRSlA2G73RbRAY+tew==", "heroine"=>{"name"=>"", "super_name"=>"my name!"}, "commit"=>"Create Heroine"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/_form.html.erb (262.7ms)
+  Rendered heroines/new.html.erb within layouts/application (266.5ms)
+Completed 500 Internal Server Error in 35200ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `heroine' for #<#<Class:0x00007f99ed126770>:0x00007f99ed784a90>
+Did you mean?  @heroine):
+    10:         <div id="error_messages">
+    11:             <h3>Errors: </h3>
+    12:             <ul>
+    13:                 <% heroine.errors.full_messages.each do |message| %>
+    14:                     <li><%= message %></li>
+    15:                 <% end %>
+    16:             </ul>
+  
+app/views/heroines/_form.html.erb:13:in `block in _app_views_heroines__form_html_erb__4590918050716076823_70149545439820'
+app/views/heroines/_form.html.erb:1:in `_app_views_heroines__form_html_erb__4590918050716076823_70149545439820'
+app/views/heroines/new.html.erb:2:in `_app_views_heroines_new_html_erb__838956758571844089_70149545376800'
+app/controllers/heroines_controller.rb:27:in `create'
+Started POST "/heroines" for ::1 at 2020-04-09 13:26:30 -0500
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K0wSC6e6bCpWubpgEMdOQQXOetf/ugXjGKaTiE+1BKoJnGRru2pOKNI3OmFN9PxGbjRjyRSlA2G73RbRAY+tew==", "heroine"=>{"name"=>"", "super_name"=>"my name!"}, "commit"=>"Create Heroine"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/_form.html.erb (2.6ms)
+  Rendered heroines/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 6228ms (Views: 29.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/heroines" for ::1 at 2020-04-09 13:26:46 -0500
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q5I+EhWlo9tR+Q/aQvkMcdCHG5tYi7YuPNOlk+I9LdBhQkhyCXWB2dV3j9sfyr52u30ChbOUsKyfqCDKrAeEAQ==", "heroine"=>{"name"=>"My super name!", "super_name"=>"my name!"}, "commit"=>"Create Heroine"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.5ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "My super name!"], ["super_name", "my name!"], ["created_at", "2020-04-09 18:26:46.936192"], ["updated_at", "2020-04-09 18:26:46.936192"]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/heroines/12
+Completed 302 Found in 21ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/heroines/12" for ::1 at 2020-04-09 13:26:46 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 52ms (Views: 50.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/heroines" for ::1 at 2020-04-09 13:26:50 -0500
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.5ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 51ms (Views: 42.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/heroine" for ::1 at 2020-04-09 13:26:50 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/heroine"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/heroines/1" for ::1 at 2020-04-09 13:31:02 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (0.6ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 39ms (Views: 29.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/heroines" for ::1 at 2020-04-09 13:31:04 -0500
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.8ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 42ms (Views: 36.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/heroines/4" for ::1 at 2020-04-09 13:31:05 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mHeroine Load (0.6ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 55ms (Views: 45.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/heroines/4/edit" for ::1 at 2020-04-09 13:31:07 -0500
+Processing by HeroinesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mHeroine Load (0.6ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering heroines/edit.html.erb within layouts/application
+  Rendered heroines/_form.html.erb (8.3ms)
+  Rendered heroines/edit.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 46ms (Views: 35.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/heroines/4" for ::1 at 2020-04-09 13:31:41 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mHeroine Load (0.7ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 38ms (Views: 32.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/heroines/4" for ::1 at 2020-04-09 13:31:42 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 33ms (Views: 29.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/heroines" for ::1 at 2020-04-09 13:39:29 -0500
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 36ms (Views: 30.2ms | ActiveRecord: 0.3ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[36mPower Load (1.2ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mHeroine Load (0.1ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" ORDER BY "heroines"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateHeroinePowers (20200409184436)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "heroine_powers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "heroine_id" integer, "power_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200409184436"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[36mHeroine Load (0.1ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" ORDER BY "heroines"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" ORDER BY "powers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 12], ["power_id", 4], ["created_at", "2020-04-09 18:59:01.604932"], ["updated_at", "2020-04-09 18:59:01.604932"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.5ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ? LIMIT ?[0m  [["heroine_id", 12], ["LIMIT", 11]]
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ? LIMIT ?[0m  [["heroine_id", 12], ["LIMIT", 11]]
+  [1m[36mPower Load (0.6ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 12]]
+Started GET "/heroines" for ::1 at 2020-04-09 14:02:06 -0500
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 43ms (Views: 32.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/heroines/1/edit" for ::1 at 2020-04-09 14:02:08 -0500
+Processing by HeroinesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (0.5ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/edit.html.erb within layouts/application
+  Rendered heroines/_form.html.erb (14.4ms)
+  Rendered heroines/edit.html.erb within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Doctor):
+     5:     <%= f.label "Super Name" %><br>
+     6:     <%= f.text_field :super_name %><br>
+     7:     <%= f.label "Power" %><br>
+     8:     <%= f.collection_select :power, Doctor.all, :id, :name %>
+     9:     <%= f.submit %>
+    10:     <!-- Error Messages -->
+    11:     <% if @heroine.errors.any? %>
+  
+app/views/heroines/_form.html.erb:8:in `block in _app_views_heroines__form_html_erb__4590918050716076823_70149555536180'
+app/views/heroines/_form.html.erb:1:in `_app_views_heroines__form_html_erb__4590918050716076823_70149555536180'
+app/views/heroines/edit.html.erb:2:in `_app_views_heroines_edit_html_erb__1496849242814983493_70149555525280'
+Started GET "/heroines/1/edit" for ::1 at 2020-04-09 14:02:27 -0500
+Processing by HeroinesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/edit.html.erb within layouts/application
+  Rendered heroines/_form.html.erb (13.3ms)
+  Rendered heroines/edit.html.erb within layouts/application (14.4ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `power' for #<Heroine:0x00007f99eeaa3c48>
+Did you mean?  powers
+               powers=):
+     5:     <%= f.label "Super Name" %><br>
+     6:     <%= f.text_field :super_name %><br>
+     7:     <%= f.label "Power" %><br>
+     8:     <%= f.collection_select :power, Power.all, :id, :name %>
+     9:     <%= f.submit %>
+    10:     <!-- Error Messages -->
+    11:     <% if @heroine.errors.any? %>
+  
+app/views/heroines/_form.html.erb:8:in `block in _app_views_heroines__form_html_erb__4590918050716076823_70149518991380'
+app/views/heroines/_form.html.erb:1:in `_app_views_heroines__form_html_erb__4590918050716076823_70149518991380'
+app/views/heroines/edit.html.erb:2:in `_app_views_heroines_edit_html_erb__1496849242814983493_70149555426580'
+Started GET "/heroines/1/edit" for ::1 at 2020-04-09 14:02:50 -0500
+Processing by HeroinesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (0.9ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/edit.html.erb within layouts/application
+  [1m[36mPower Load (0.4ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 1]]
+  Rendered heroines/_form.html.erb (42.8ms)
+  Rendered heroines/edit.html.erb within layouts/application (44.6ms)
+Completed 200 OK in 72ms (Views: 63.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/heroines/1/edit" for ::1 at 2020-04-09 14:03:07 -0500
+Processing by HeroinesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/edit.html.erb within layouts/application
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 1]]
+  Rendered heroines/_form.html.erb (5.9ms)
+  Rendered heroines/edit.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 38ms (Views: 31.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/heroines/1/edit" for ::1 at 2020-04-09 14:03:19 -0500
+Processing by HeroinesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/edit.html.erb within layouts/application
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 1]]
+  Rendered heroines/_form.html.erb (8.0ms)
+  Rendered heroines/edit.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 39ms (Views: 33.4ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/heroines/1" for ::1 at 2020-04-09 14:03:23 -0500
+Processing by HeroinesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r+xEiZOOaK6l2DkWRG4IEwvlo8bLK7tLfVgjF3NJ89yNPDLpj15KrCFWuRcZXboUYB+62CA0vcneI6ZOPXNaDQ==", "heroine"=>{"name"=>"Kamala Khan", "super_name"=>"Ms. Marvel", "powers"=>"3"}, "commit"=>"Update Heroine", "id"=>"1"}
+  [1m[36mHeroine Load (1.5ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameter: :powers
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/heroines/1
+Completed 302 Found in 11ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/heroines/1" for ::1 at 2020-04-09 14:03:23 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (0.1ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/heroines/1" for ::1 at 2020-04-09 14:05:04 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 49ms (Views: 43.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/heroines/1/edit" for ::1 at 2020-04-09 14:05:05 -0500
+Processing by HeroinesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/edit.html.erb within layouts/application
+  [1m[36mPower Load (0.5ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 1]]
+  Rendered heroines/_form.html.erb (19.2ms)
+  Rendered heroines/edit.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 56ms (Views: 47.6ms | ActiveRecord: 1.1ms)
+
+
+Started PATCH "/heroines/1" for ::1 at 2020-04-09 14:05:08 -0500
+Processing by HeroinesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Swb6ZpU8Cxko1ohtK9SoatuZHcviu1yYAWZPPG860I6DL8ATweHGql6yGVzYFQ/0mGk/aTfAVSdc6cm9kILW5g==", "heroine"=>{"name"=>"Kamala Khan", "super_name"=>"Ms. Marvel", "powers"=>"2"}, "commit"=>"Update Heroine", "id"=>"1"}
+  [1m[36mHeroine Load (0.9ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameter: :powers
+  [1m[35m (1.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/heroines/1
+Completed 302 Found in 14ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/heroines/1" for ::1 at 2020-04-09 14:05:08 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 27ms (Views: 23.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/heroines" for ::1 at 2020-04-09 14:06:06 -0500
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 38ms (Views: 33.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/heroines/2" for ::1 at 2020-04-09 14:06:08 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 45ms (Views: 38.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/heroines/2" for ::1 at 2020-04-09 14:10:32 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (3.3ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 2]]
+  Rendered heroines/show.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 65ms (Views: 54.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/heroines" for ::1 at 2020-04-09 14:10:36 -0500
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 37ms (Views: 30.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/heroines/1" for ::1 at 2020-04-09 14:10:37 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 1]]
+  Rendered heroines/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 47ms (Views: 39.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/heroines/12" for ::1 at 2020-04-09 14:10:40 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 12]]
+  Rendered heroines/show.html.erb within layouts/application (121.9ms)
+Completed 500 Internal Server Error in 135ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `power_path' for #<#<Class:0x00007f99ef931df0>:0x00007f99eeaf0688>
+Did you mean?  powers_path):
+    11: <p>
+    12:   <strong>Powers:</strong>
+    13:   <% @heroine.powers.each do |power| %>
+    14:     <%= link_to power.name, power_path(power) %>
+    15:   <% end %>
+    16: </p>
+    17: 
+  
+app/views/heroines/show.html.erb:14:in `block in _app_views_heroines_show_html_erb___540859105075575183_70149555587000'
+app/views/heroines/show.html.erb:13:in `_app_views_heroines_show_html_erb___540859105075575183_70149555587000'
+Started GET "/heroines" for ::1 at 2020-04-09 14:11:15 -0500
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 89ms (Views: 81.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/powers" for ::1 at 2020-04-09 14:11:18 -0500
+Processing by PowersController#index as HTML
+  Rendering powers/index.html.erb within layouts/application
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  Rendered powers/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 53ms (Views: 49.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/powers/1" for ::1 at 2020-04-09 14:11:20 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/powers/1"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/powers/1" for ::1 at 2020-04-09 14:12:23 -0500
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for PowersController):
+  
+actionpack (5.1.7) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/powers/1" for ::1 at 2020-04-09 14:12:26 -0500
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for PowersController):
+  
+actionpack (5.1.7) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/powers/1" for ::1 at 2020-04-09 14:14:59 -0500
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPower Load (0.4ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering powers/show.html.erb within layouts/application
+  Rendered powers/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 33ms (Views: 18.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/powers/1" for ::1 at 2020-04-09 14:16:55 -0500
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPower Load (0.4ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering powers/show.html.erb within layouts/application
+  Rendered powers/show.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <p>
+    2:   <strong>Name:</strong>
+    3:   <%= @power.name %>
+    4: </p>
+    5: 
+    6: <p>
+  
+app/views/powers/show.html.erb:3:in `_app_views_powers_show_html_erb___1150773724761653776_70149562665680'
+Started GET "/powers/1" for ::1 at 2020-04-09 14:16:57 -0500
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPower Load (0.4ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering powers/show.html.erb within layouts/application
+  Rendered powers/show.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <p>
+    2:   <strong>Name:</strong>
+    3:   <%= @power.name %>
+    4: </p>
+    5: 
+    6: <p>
+  
+app/views/powers/show.html.erb:3:in `_app_views_powers_show_html_erb___1150773724761653776_70149526877080'
+Started GET "/powers/1" for ::1 at 2020-04-09 14:17:33 -0500
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering powers/show.html.erb within layouts/application
+  Rendered powers/show.html.erb within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `Description' for #<Power:0x00007f99efa12238>
+Did you mean?  description?
+               description=):
+     5: 
+     6: <p>
+     7:   <strong>Super Name:</strong>
+     8:   <%= @power.Description %>
+     9: </p>
+    10: 
+    11: <p>
+  
+app/views/powers/show.html.erb:8:in `_app_views_powers_show_html_erb___1150773724761653776_70149563516900'
+Started GET "/powers/1" for ::1 at 2020-04-09 14:17:36 -0500
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPower Load (0.4ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering powers/show.html.erb within layouts/application
+  Rendered powers/show.html.erb within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `Description' for #<Power:0x00007f99ee9d8a70>
+Did you mean?  description?
+               description=):
+     5: 
+     6: <p>
+     7:   <strong>Super Name:</strong>
+     8:   <%= @power.Description %>
+     9: </p>
+    10: 
+    11: <p>
+  
+app/views/powers/show.html.erb:8:in `_app_views_powers_show_html_erb___1150773724761653776_70149544459240'
+Started GET "/powers/1" for ::1 at 2020-04-09 14:17:46 -0500
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPower Load (0.5ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering powers/show.html.erb within layouts/application
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 1]]
+  Rendered powers/show.html.erb within layouts/application (53.5ms)
+Completed 200 OK in 85ms (Views: 75.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/powers/1" for ::1 at 2020-04-09 14:18:03 -0500
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering powers/show.html.erb within layouts/application
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 1]]
+  Rendered powers/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 46ms (Views: 42.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/powers" for ::1 at 2020-04-09 14:18:06 -0500
+Processing by PowersController#index as HTML
+  Rendering powers/index.html.erb within layouts/application
+  [1m[36mPower Load (0.5ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  Rendered powers/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 47ms (Views: 42.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/powers" for ::1 at 2020-04-09 14:18:51 -0500
+Processing by PowersController#index as HTML
+  Rendering powers/index.html.erb within layouts/application
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  Rendered powers/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 35ms (Views: 30.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/powers/1" for ::1 at 2020-04-09 14:18:53 -0500
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering powers/show.html.erb within layouts/application
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 1]]
+  Rendered powers/show.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 65ms (Views: 52.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/powers" for ::1 at 2020-04-09 14:18:55 -0500
+Processing by PowersController#index as HTML
+  Rendering powers/index.html.erb within layouts/application
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  Rendered powers/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/powers/4" for ::1 at 2020-04-09 14:19:02 -0500
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPower Load (0.7ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering powers/show.html.erb within layouts/application
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 4]]
+  Rendered powers/show.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 45ms (Views: 36.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/heroines/12" for ::1 at 2020-04-09 14:20:03 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (0.4ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 12]]
+  Rendered heroines/show.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 62ms (Views: 50.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/powers/4" for ::1 at 2020-04-09 14:20:05 -0500
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering powers/show.html.erb within layouts/application
+  [1m[36mHeroine Load (0.5ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 4]]
+  Rendered powers/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 39ms (Views: 34.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/heroines/12" for ::1 at 2020-04-09 14:20:06 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (0.6ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 12]]
+  Rendered heroines/show.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 35ms (Views: 31.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/heroines/12/edit" for ::1 at 2020-04-09 14:20:07 -0500
+Processing by HeroinesController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering heroines/edit.html.erb within layouts/application
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mPower Load (0.4ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 12]]
+  Rendered heroines/_form.html.erb (9.8ms)
+  Rendered heroines/edit.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 40ms (Views: 33.1ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/heroines/12" for ::1 at 2020-04-09 14:20:09 -0500
+Processing by HeroinesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MvyqrZprSW2W+YWWsAoC1BuzCPSEwZMpLUvCAETC80vv0yY+bu7YntSW7mBRendnsTRSlbi7zX6TpzAIh0mdyg==", "heroine"=>{"name"=>"My super name!", "super_name"=>"my name!", "powers"=>"3"}, "commit"=>"Update Heroine", "id"=>"12"}
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+Unpermitted parameter: :powers
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/heroines/12
+Completed 302 Found in 7ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/heroines/12" for ::1 at 2020-04-09 14:20:09 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 12]]
+  Rendered heroines/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 25ms (Views: 22.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/heroines/12/edit" for ::1 at 2020-04-09 14:25:13 -0500
+Processing by HeroinesController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering heroines/edit.html.erb within layouts/application
+  [1m[36mPower Load (0.9ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 12]]
+  Rendered heroines/_form.html.erb (12.6ms)
+  Rendered heroines/edit.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 52ms (Views: 36.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/powers" for ::1 at 2020-04-09 14:25:26 -0500
+Processing by PowersController#index as HTML
+  Rendering powers/index.html.erb within layouts/application
+  [1m[36mPower Load (0.5ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 2]]
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 3]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 4]]
+  Rendered powers/index.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 57ms (Views: 47.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/powers/4" for ::1 at 2020-04-09 14:25:30 -0500
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPower Load (0.8ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering powers/show.html.erb within layouts/application
+  [1m[36mHeroine Load (0.6ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines" INNER JOIN "heroine_powers" ON "heroines"."id" = "heroine_powers"."heroine_id" WHERE "heroine_powers"."power_id" = ?[0m  [["power_id", 4]]
+  Rendered powers/show.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 40ms (Views: 31.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/heroines/12" for ::1 at 2020-04-09 14:25:31 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mHeroine Load (0.6ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (1.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 12]]
+  Rendered heroines/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 67ms (Views: 60.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/heroines/12/edit" for ::1 at 2020-04-09 14:25:33 -0500
+Processing by HeroinesController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mHeroine Load (0.7ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering heroines/edit.html.erb within layouts/application
+  [1m[36mPower Load (0.5ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 12]]
+  Rendered heroines/_form.html.erb (9.5ms)
+  Rendered heroines/edit.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 43ms (Views: 34.9ms | ActiveRecord: 1.4ms)
+
+
+Started PATCH "/heroines/12" for ::1 at 2020-04-09 14:26:35 -0500
+Processing by HeroinesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YzVz46QBWK8Y+wbEUZDYemAkJwiCcvBYPjQDkZLyOTq+Gv9wUITJXFqUbTKw4K3JyqN9ab4Irg+A2PGZUXlXuw==", "heroine"=>{"name"=>"My super name!", "super_name"=>"my name!", "powers"=>"2"}, "commit"=>"Update Heroine", "id"=>"12"}
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+Unpermitted parameter: :powers
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/heroines/12
+Completed 302 Found in 14ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/heroines/12" for ::1 at 2020-04-09 14:26:35 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 12]]
+  Rendered heroines/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 42ms (Views: 35.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/heroines/12/edit" for ::1 at 2020-04-09 14:26:39 -0500
+Processing by HeroinesController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mHeroine Load (0.1ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering heroines/edit.html.erb within layouts/application
+  [1m[36mPower Load (0.5ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 12]]
+  Rendered heroines/_form.html.erb (7.4ms)
+  Rendered heroines/edit.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 50ms (Views: 46.8ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/heroines/12" for ::1 at 2020-04-09 14:26:42 -0500
+Processing by HeroinesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tXpMnZFEbAGasWiVaI7GXxv6i18dfyHUarSvNnh5gqhoVcAOZcH98tjeA2OJ/rPssX3RPiEFf4PUWF0+u/LsKQ==", "heroine"=>{"name"=>"My super name!", "super_name"=>"my name!", "powers"=>"3"}, "commit"=>"Update Heroine", "id"=>"12"}
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+Unpermitted parameter: :powers
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/heroines/12
+Completed 302 Found in 15ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/heroines/12" for ::1 at 2020-04-09 14:26:42 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 12]]
+  Rendered heroines/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 28ms (Views: 24.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/heroines/12" for ::1 at 2020-04-09 14:26:44 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mHeroine Load (0.5ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 12]]
+  Rendered heroines/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 30ms (Views: 25.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/heroines/12" for ::1 at 2020-04-09 14:28:29 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mHeroine Load (0.5ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 12]]
+  Rendered heroines/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 30ms (Views: 24.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/heroines/12/edit" for ::1 at 2020-04-09 14:28:31 -0500
+Processing by HeroinesController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mHeroine Load (0.6ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering heroines/edit.html.erb within layouts/application
+  [1m[36mPower Load (0.5ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 12]]
+  Rendered heroines/_form.html.erb (13.8ms)
+  Rendered heroines/edit.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 82ms (Views: 67.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/heroines" for ::1 at 2020-04-09 14:28:33 -0500
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.6ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 47ms (Views: 44.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/heroines/1" for ::1 at 2020-04-09 14:28:36 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 1]]
+  Rendered heroines/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 42ms (Views: 34.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/heroines/1/edit" for ::1 at 2020-04-09 14:28:39 -0500
+Processing by HeroinesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/edit.html.erb within layouts/application
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mPower Load (0.8ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 1]]
+  Rendered heroines/_form.html.erb (10.7ms)
+  Rendered heroines/edit.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 43ms (Views: 34.7ms | ActiveRecord: 1.4ms)
+
+
+Started PATCH "/heroines/1" for ::1 at 2020-04-09 14:28:42 -0500
+Processing by HeroinesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xcX7OqnWxsM4GM2+CkNyvsQufzPNkEhUOojVlTqyiwIN7MFP/QsLcE58XI/5gtUgh95dkRjrQetnB1MUxQqNag==", "heroine"=>{"name"=>"Kamala Khan", "super_name"=>"Ms. Marvel", "powers"=>"2"}, "commit"=>"Update Heroine", "id"=>"1"}
+  [1m[36mHeroine Load (0.7ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameter: :powers
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/heroines/1
+Completed 302 Found in 10ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/heroines/1" for ::1 at 2020-04-09 14:28:42 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (0.1ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 1]]
+  Rendered heroines/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 27ms (Views: 24.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/heroines/1" for ::1 at 2020-04-09 14:28:44 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 1]]
+  Rendered heroines/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 32ms (Views: 27.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/heroines/1" for ::1 at 2020-04-09 14:30:28 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 1]]
+  Rendered heroines/show.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 44ms (Views: 30.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/heroines/1/edit" for ::1 at 2020-04-09 14:30:30 -0500
+Processing by HeroinesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (0.5ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/edit.html.erb within layouts/application
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 1]]
+  Rendered heroines/_form.html.erb (38.8ms)
+  Rendered heroines/edit.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 71ms (Views: 62.1ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/heroines/1" for ::1 at 2020-04-09 14:30:33 -0500
+Processing by HeroinesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pXGYl2O6vbl0cXuNvmT9alCF1EYCUtAa3zULx7r3BF9tWKLiN2dwCgIV6rxNpVr0E3X25Ncp2aWCuo1GRU8CNw==", "heroine"=>{"name"=>"Kamala Khan", "super_name"=>"Ms. Marvel", "powers"=>"2"}, "commit"=>"Update Heroine", "id"=>"1"}
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameter: :powers
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/heroines/1
+Completed 302 Found in 15ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/heroines/1" for ::1 at 2020-04-09 14:30:33 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 1]]
+  Rendered heroines/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 27ms (Views: 24.9ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mPower Load (0.6ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" ORDER BY "powers"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 12], ["power_id", 1], ["created_at", "2020-04-09 19:31:47.294698"], ["updated_at", "2020-04-09 19:31:47.294698"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/heroines/1/edit" for ::1 at 2020-04-09 14:32:02 -0500
+Processing by HeroinesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/edit.html.erb within layouts/application
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 1]]
+  Rendered heroines/_form.html.erb (7.2ms)
+  Rendered heroines/edit.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 38ms (Views: 27.2ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/heroines/1" for ::1 at 2020-04-09 14:32:07 -0500
+Processing by HeroinesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5azDcai07WjUx6KDr3ydq1Ge+TxEi2PNU1ekIXg18t8thfkE/Gkg26KjM7JcvTo1Em7bnpHwanIO2CKgh430tw==", "heroine"=>{"name"=>"Kamala Khan", "super_name"=>"Ms. Marvel", "powers"=>"3"}, "commit"=>"Update Heroine", "id"=>"1"}
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameter: :powers
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/heroines/1
+Completed 302 Found in 14ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/heroines/1" for ::1 at 2020-04-09 14:32:07 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 1]]
+  Rendered heroines/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 28ms (Views: 22.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/heroines/1" for ::1 at 2020-04-09 14:33:27 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (0.1ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 1]]
+  Rendered heroines/show.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 50ms (Views: 32.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/heroines/1" for ::1 at 2020-04-09 14:33:49 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 1]]
+  Rendered heroines/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 31ms (Views: 24.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/heroines/1/edit" for ::1 at 2020-04-09 14:33:51 -0500
+Processing by HeroinesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (1.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/edit.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "powers"."id" FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 1]]
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  Rendered heroines/_form.html.erb (7.1ms)
+  Rendered heroines/edit.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 57ms (Views: 22.8ms | ActiveRecord: 1.5ms)
+
+
+Started PATCH "/heroines/1" for ::1 at 2020-04-09 14:33:52 -0500
+Processing by HeroinesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8CNIhbR0B0Oqn2eRnv/BdgecfyFD7gzUqAvI+oVKdg84CnLw4KnK8Nz79qBtPmboRGxdg5aVBWv1hE57evJwZw==", "heroine"=>{"name"=>"Kamala Khan", "super_name"=>"Ms. Marvel", "power_ids"=>"1"}, "commit"=>"Update Heroine", "id"=>"1"}
+  [1m[36mHeroine Load (0.5ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPower Load (0.5ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = 1[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 1], ["power_id", 1], ["created_at", "2020-04-09 19:33:52.847066"], ["updated_at", "2020-04-09 19:33:52.847066"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/heroines/1
+Completed 302 Found in 29ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/heroines/1" for ::1 at 2020-04-09 14:33:52 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 1]]
+  Rendered heroines/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/heroines" for ::1 at 2020-04-09 14:33:54 -0500
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (2.1ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 43ms (Views: 32.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/heroines/5" for ::1 at 2020-04-09 14:33:56 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mHeroine Load (0.9ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 5]]
+  Rendered heroines/show.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 39ms (Views: 30.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/heroines/5/edit" for ::1 at 2020-04-09 14:34:00 -0500
+Processing by HeroinesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering heroines/edit.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "powers"."id" FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 5]]
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  Rendered heroines/_form.html.erb (6.7ms)
+  Rendered heroines/edit.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 39ms (Views: 32.6ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/heroines/5" for ::1 at 2020-04-09 14:34:03 -0500
+Processing by HeroinesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7MZzdcWnqv9I+CdBOltMEHxNLDqqyYg1K60yGkMQjz27yaVfMnbyF1rJ+Cg5Dz0Ntu3MCZBaZVDyGUXyDp9+jA==", "heroine"=>{"name"=>"Wanda Maximoff", "super_name"=>"Scarlet Witch", "power_ids"=>"4"}, "commit"=>"Update Heroine", "id"=>"5"}
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mPower Load (1.0ms)[0m  [1m[34mSELECT "powers".* FROM "powers" WHERE "powers"."id" = 4[0m
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 5]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 5], ["power_id", 4], ["created_at", "2020-04-09 19:34:03.402234"], ["updated_at", "2020-04-09 19:34:03.402234"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/heroines/5
+Completed 302 Found in 22ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/heroines/5" for ::1 at 2020-04-09 14:34:03 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 5]]
+  Rendered heroines/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 27ms (Views: 22.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/heroines/5/edit" for ::1 at 2020-04-09 14:34:53 -0500
+Processing by HeroinesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering heroines/edit.html.erb within layouts/application
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "powers"."id" FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 5]]
+  [1m[36mPower Load (0.9ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  Rendered heroines/_form.html.erb (11.4ms)
+  Rendered heroines/edit.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 60ms (Views: 52.0ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/heroines/5" for ::1 at 2020-04-09 14:35:04 -0500
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 5]]
+  Rendered heroines/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 32ms (Views: 25.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/heroines" for ::1 at 2020-04-09 14:35:05 -0500
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 39ms (Views: 36.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/heroines" for ::1 at 2020-04-09 14:35:07 -0500
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 34ms (Views: 31.2ms | ActiveRecord: 0.4ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateHeroines (20170725185425)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "heroines" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "super_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170725185425"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreatePowers (20170725185638)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "powers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170725185638"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateHeroinePowers (20200409184436)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "heroine_powers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "heroine_id" integer, "power_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200409184436"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-04-09 19:41:35.332062"], ["updated_at", "2020-04-09 19:41:35.332062"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "super strength"], ["description", "gives the wielder super-human strengths"], ["created_at", "2020-04-09 19:41:55.802863"], ["updated_at", "2020-04-09 19:41:55.802863"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "flight"], ["description", "gives the wielder the ability to fly through the skies at supersonic speed"], ["created_at", "2020-04-09 19:41:55.806237"], ["updated_at", "2020-04-09 19:41:55.806237"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "super human senses"], ["description", "allows the wielder to use her senses at a super-human level"], ["created_at", "2020-04-09 19:41:55.808280"], ["updated_at", "2020-04-09 19:41:55.808280"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "elasticity"], ["description", "can stretch the human body to extreme lengths"], ["created_at", "2020-04-09 19:41:55.810260"], ["updated_at", "2020-04-09 19:41:55.810260"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kamala Khan"], ["super_name", "Ms. Marvel"], ["created_at", "2020-04-09 19:41:55.815944"], ["updated_at", "2020-04-09 19:41:55.815944"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Doreen Green"], ["super_name", "Squirrel Girl"], ["created_at", "2020-04-09 19:41:55.818002"], ["updated_at", "2020-04-09 19:41:55.818002"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Gwen Stacy"], ["super_name", "Spider-Gwen"], ["created_at", "2020-04-09 19:41:55.820133"], ["updated_at", "2020-04-09 19:41:55.820133"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Janet Van Dyne"], ["super_name", "The Wasp"], ["created_at", "2020-04-09 19:41:55.821994"], ["updated_at", "2020-04-09 19:41:55.821994"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Wanda Maximoff"], ["super_name", "Scarlet Witch"], ["created_at", "2020-04-09 19:41:55.823904"], ["updated_at", "2020-04-09 19:41:55.823904"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Carol Danvers"], ["super_name", "Captain Marvel"], ["created_at", "2020-04-09 19:41:55.825809"], ["updated_at", "2020-04-09 19:41:55.825809"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Jean Grey"], ["super_name", "Dark Phoenix"], ["created_at", "2020-04-09 19:41:55.827916"], ["updated_at", "2020-04-09 19:41:55.827916"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ororo Munroe"], ["super_name", "Storm"], ["created_at", "2020-04-09 19:41:55.829823"], ["updated_at", "2020-04-09 19:41:55.829823"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kitty Pryde"], ["super_name", "Shadowcat"], ["created_at", "2020-04-09 19:41:55.831703"], ["updated_at", "2020-04-09 19:41:55.831703"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Elektra Natchios"], ["super_name", "Elektra"], ["created_at", "2020-04-09 19:41:55.833568"], ["updated_at", "2020-04-09 19:41:55.833568"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 1]]
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" ORDER BY "heroines"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 10]]
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" ORDER BY "powers"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 10], ["power_id", 4], ["created_at", "2020-04-09 19:43:39.472849"], ["updated_at", "2020-04-09 19:43:39.472849"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 5]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 6]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 8]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 9]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 10]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "powers" WHERE "powers"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "powers" WHERE "powers"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "powers" WHERE "powers"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "powers" WHERE "powers"."id" = ?[0m  [["id", 4]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "super strength"], ["description", "gives the wielder super-human strengths"], ["created_at", "2020-04-09 19:45:38.990870"], ["updated_at", "2020-04-09 19:45:38.990870"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "flight"], ["description", "gives the wielder the ability to fly through the skies at supersonic speed"], ["created_at", "2020-04-09 19:45:38.993312"], ["updated_at", "2020-04-09 19:45:38.993312"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "super human senses"], ["description", "allows the wielder to use her senses at a super-human level"], ["created_at", "2020-04-09 19:45:38.995433"], ["updated_at", "2020-04-09 19:45:38.995433"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "elasticity"], ["description", "can stretch the human body to extreme lengths"], ["created_at", "2020-04-09 19:45:38.997431"], ["updated_at", "2020-04-09 19:45:38.997431"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kamala Khan"], ["super_name", "Ms. Marvel"], ["created_at", "2020-04-09 19:45:38.999574"], ["updated_at", "2020-04-09 19:45:38.999574"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Doreen Green"], ["super_name", "Squirrel Girl"], ["created_at", "2020-04-09 19:45:39.001804"], ["updated_at", "2020-04-09 19:45:39.001804"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Gwen Stacy"], ["super_name", "Spider-Gwen"], ["created_at", "2020-04-09 19:45:39.003848"], ["updated_at", "2020-04-09 19:45:39.003848"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Janet Van Dyne"], ["super_name", "The Wasp"], ["created_at", "2020-04-09 19:45:39.005964"], ["updated_at", "2020-04-09 19:45:39.005964"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Wanda Maximoff"], ["super_name", "Scarlet Witch"], ["created_at", "2020-04-09 19:45:39.008051"], ["updated_at", "2020-04-09 19:45:39.008051"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Carol Danvers"], ["super_name", "Captain Marvel"], ["created_at", "2020-04-09 19:45:39.009983"], ["updated_at", "2020-04-09 19:45:39.009983"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Jean Grey"], ["super_name", "Dark Phoenix"], ["created_at", "2020-04-09 19:45:39.011847"], ["updated_at", "2020-04-09 19:45:39.011847"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ororo Munroe"], ["super_name", "Storm"], ["created_at", "2020-04-09 19:45:39.013748"], ["updated_at", "2020-04-09 19:45:39.013748"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kitty Pryde"], ["super_name", "Shadowcat"], ["created_at", "2020-04-09 19:45:39.016000"], ["updated_at", "2020-04-09 19:45:39.016000"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Elektra Natchios"], ["super_name", "Elektra"], ["created_at", "2020-04-09 19:45:39.018476"], ["updated_at", "2020-04-09 19:45:39.018476"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 11]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 11], ["power_id", 5], ["created_at", "2020-04-09 19:45:39.051349"], ["updated_at", "2020-04-09 19:45:39.051349"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.4ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 11]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 12]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 13]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 14]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 15]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 16]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 17]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 18]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 19]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 20]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "powers" WHERE "powers"."id" = ?[0m  [["id", 5]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "powers" WHERE "powers"."id" = ?[0m  [["id", 6]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "powers" WHERE "powers"."id" = ?[0m  [["id", 7]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "powers" WHERE "powers"."id" = ?[0m  [["id", 8]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "super strength"], ["description", "gives the wielder super-human strengths"], ["created_at", "2020-04-09 19:46:04.939736"], ["updated_at", "2020-04-09 19:46:04.939736"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "flight"], ["description", "gives the wielder the ability to fly through the skies at supersonic speed"], ["created_at", "2020-04-09 19:46:04.941919"], ["updated_at", "2020-04-09 19:46:04.941919"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "super human senses"], ["description", "allows the wielder to use her senses at a super-human level"], ["created_at", "2020-04-09 19:46:04.944030"], ["updated_at", "2020-04-09 19:46:04.944030"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "elasticity"], ["description", "can stretch the human body to extreme lengths"], ["created_at", "2020-04-09 19:46:04.946075"], ["updated_at", "2020-04-09 19:46:04.946075"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kamala Khan"], ["super_name", "Ms. Marvel"], ["created_at", "2020-04-09 19:46:04.948147"], ["updated_at", "2020-04-09 19:46:04.948147"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Doreen Green"], ["super_name", "Squirrel Girl"], ["created_at", "2020-04-09 19:46:04.950288"], ["updated_at", "2020-04-09 19:46:04.950288"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Gwen Stacy"], ["super_name", "Spider-Gwen"], ["created_at", "2020-04-09 19:46:04.952179"], ["updated_at", "2020-04-09 19:46:04.952179"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Janet Van Dyne"], ["super_name", "The Wasp"], ["created_at", "2020-04-09 19:46:04.954001"], ["updated_at", "2020-04-09 19:46:04.954001"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Wanda Maximoff"], ["super_name", "Scarlet Witch"], ["created_at", "2020-04-09 19:46:04.956135"], ["updated_at", "2020-04-09 19:46:04.956135"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Carol Danvers"], ["super_name", "Captain Marvel"], ["created_at", "2020-04-09 19:46:04.958166"], ["updated_at", "2020-04-09 19:46:04.958166"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Jean Grey"], ["super_name", "Dark Phoenix"], ["created_at", "2020-04-09 19:46:04.960151"], ["updated_at", "2020-04-09 19:46:04.960151"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ororo Munroe"], ["super_name", "Storm"], ["created_at", "2020-04-09 19:46:04.962188"], ["updated_at", "2020-04-09 19:46:04.962188"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kitty Pryde"], ["super_name", "Shadowcat"], ["created_at", "2020-04-09 19:46:04.964030"], ["updated_at", "2020-04-09 19:46:04.964030"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Elektra Natchios"], ["super_name", "Elektra"], ["created_at", "2020-04-09 19:46:04.965857"], ["updated_at", "2020-04-09 19:46:04.965857"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 21]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 21], ["power_id", 12], ["created_at", "2020-04-09 19:46:04.998613"], ["updated_at", "2020-04-09 19:46:04.998613"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 21], ["power_id", 9], ["created_at", "2020-04-09 19:46:12.017989"], ["updated_at", "2020-04-09 19:46:12.017989"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.3ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 22]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 22], ["power_id", 10], ["created_at", "2020-04-09 19:46:18.768151"], ["updated_at", "2020-04-09 19:46:18.768151"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "heroine_powers" ("heroine_id", "power_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["heroine_id", 22], ["power_id", 12], ["created_at", "2020-04-09 19:46:22.434799"], ["updated_at", "2020-04-09 19:46:22.434799"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 23]]
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 21]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 22]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 23]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 24]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 25]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 26]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 27]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 28]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 29]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "heroines" WHERE "heroines"."id" = ?[0m  [["id", 30]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "powers" WHERE "powers"."id" = ?[0m  [["id", 9]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "powers" WHERE "powers"."id" = ?[0m  [["id", 10]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "powers" WHERE "powers"."id" = ?[0m  [["id", 11]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "powers" WHERE "powers"."id" = ?[0m  [["id", 12]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "super strength"], ["description", "gives the wielder super-human strengths"], ["created_at", "2020-04-09 19:46:35.889278"], ["updated_at", "2020-04-09 19:46:35.889278"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "flight"], ["description", "gives the wielder the ability to fly through the skies at supersonic speed"], ["created_at", "2020-04-09 19:46:35.891484"], ["updated_at", "2020-04-09 19:46:35.891484"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "super human senses"], ["description", "allows the wielder to use her senses at a super-human level"], ["created_at", "2020-04-09 19:46:35.893717"], ["updated_at", "2020-04-09 19:46:35.893717"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "elasticity"], ["description", "can stretch the human body to extreme lengths"], ["created_at", "2020-04-09 19:46:35.895708"], ["updated_at", "2020-04-09 19:46:35.895708"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kamala Khan"], ["super_name", "Ms. Marvel"], ["created_at", "2020-04-09 19:46:35.897919"], ["updated_at", "2020-04-09 19:46:35.897919"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Doreen Green"], ["super_name", "Squirrel Girl"], ["created_at", "2020-04-09 19:46:35.899967"], ["updated_at", "2020-04-09 19:46:35.899967"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Gwen Stacy"], ["super_name", "Spider-Gwen"], ["created_at", "2020-04-09 19:46:35.901895"], ["updated_at", "2020-04-09 19:46:35.901895"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Janet Van Dyne"], ["super_name", "The Wasp"], ["created_at", "2020-04-09 19:46:35.903741"], ["updated_at", "2020-04-09 19:46:35.903741"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Wanda Maximoff"], ["super_name", "Scarlet Witch"], ["created_at", "2020-04-09 19:46:35.905694"], ["updated_at", "2020-04-09 19:46:35.905694"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Carol Danvers"], ["super_name", "Captain Marvel"], ["created_at", "2020-04-09 19:46:35.907612"], ["updated_at", "2020-04-09 19:46:35.907612"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Jean Grey"], ["super_name", "Dark Phoenix"], ["created_at", "2020-04-09 19:46:35.909429"], ["updated_at", "2020-04-09 19:46:35.909429"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ororo Munroe"], ["super_name", "Storm"], ["created_at", "2020-04-09 19:46:35.911234"], ["updated_at", "2020-04-09 19:46:35.911234"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kitty Pryde"], ["super_name", "Shadowcat"], ["created_at", "2020-04-09 19:46:35.913049"], ["updated_at", "2020-04-09 19:46:35.913049"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Elektra Natchios"], ["super_name", "Elektra"], ["created_at", "2020-04-09 19:46:35.914993"], ["updated_at", "2020-04-09 19:46:35.914993"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT "powers".* FROM "powers" INNER JOIN "heroine_powers" ON "powers"."id" = "heroine_powers"."power_id" WHERE "heroine_powers"."heroine_id" = ?[0m  [["heroine_id", 31]]
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateHeroines (20170725185425)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "heroines" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "super_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170725185425"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreatePowers (20170725185638)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "powers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170725185638"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-04-09 19:47:06.535435"], ["updated_at", "2020-04-09 19:47:06.535435"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "super strength"], ["description", "gives the wielder super-human strengths"], ["created_at", "2020-04-09 19:47:14.066106"], ["updated_at", "2020-04-09 19:47:14.066106"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "flight"], ["description", "gives the wielder the ability to fly through the skies at supersonic speed"], ["created_at", "2020-04-09 19:47:14.069511"], ["updated_at", "2020-04-09 19:47:14.069511"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "super human senses"], ["description", "allows the wielder to use her senses at a super-human level"], ["created_at", "2020-04-09 19:47:14.071386"], ["updated_at", "2020-04-09 19:47:14.071386"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "elasticity"], ["description", "can stretch the human body to extreme lengths"], ["created_at", "2020-04-09 19:47:14.073228"], ["updated_at", "2020-04-09 19:47:14.073228"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kamala Khan"], ["super_name", "Ms. Marvel"], ["created_at", "2020-04-09 19:47:14.078962"], ["updated_at", "2020-04-09 19:47:14.078962"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Doreen Green"], ["super_name", "Squirrel Girl"], ["created_at", "2020-04-09 19:47:14.080996"], ["updated_at", "2020-04-09 19:47:14.080996"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Gwen Stacy"], ["super_name", "Spider-Gwen"], ["created_at", "2020-04-09 19:47:14.082872"], ["updated_at", "2020-04-09 19:47:14.082872"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Janet Van Dyne"], ["super_name", "The Wasp"], ["created_at", "2020-04-09 19:47:14.084750"], ["updated_at", "2020-04-09 19:47:14.084750"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Wanda Maximoff"], ["super_name", "Scarlet Witch"], ["created_at", "2020-04-09 19:47:14.086535"], ["updated_at", "2020-04-09 19:47:14.086535"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Carol Danvers"], ["super_name", "Captain Marvel"], ["created_at", "2020-04-09 19:47:14.088426"], ["updated_at", "2020-04-09 19:47:14.088426"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Jean Grey"], ["super_name", "Dark Phoenix"], ["created_at", "2020-04-09 19:47:14.090442"], ["updated_at", "2020-04-09 19:47:14.090442"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ororo Munroe"], ["super_name", "Storm"], ["created_at", "2020-04-09 19:47:14.092367"], ["updated_at", "2020-04-09 19:47:14.092367"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kitty Pryde"], ["super_name", "Shadowcat"], ["created_at", "2020-04-09 19:47:14.094197"], ["updated_at", "2020-04-09 19:47:14.094197"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Elektra Natchios"], ["super_name", "Elektra"], ["created_at", "2020-04-09 19:47:14.096023"], ["updated_at", "2020-04-09 19:47:14.096023"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/patrick/Development/flatiron/Module-2/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
