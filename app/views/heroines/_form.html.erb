@@ -1,0 +1,22 @@
+<%= form_for(@heroine) do |f| %>
+    <%# name, super_name %>
+    <%= f.label "Name" %><br>
+    <%= f.text_field :name %><br>
+    <%= f.label "Super Name" %><br>
+    <%= f.text_field :super_name %><br>
+    <%= f.label "Power" %><br>
+    <%= f.collection_select :power_ids, Power.all, :id, :name, include_blank: ' ' %><br>
+    <br>
+    <%= f.submit %>
+    <!-- Error Messages -->
+    <% if @heroine.errors.any? %>
+        <div id="error_messages">
+            <h3>Errors: </h3>
+            <ul>
+                <% @heroine.errors.full_messages.each do |message| %>
+                    <li><%= message %></li>
+                <% end %>
+            </ul>
+        </div>
+    <% end %>
+<% end %>

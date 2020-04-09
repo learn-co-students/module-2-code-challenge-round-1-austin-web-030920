@@ -23,4 +23,8 @@ heroines = [
   {name: "Elektra Natchios", super_name: "Elektra" }
 ]
 
-heroines.each { |heroine| Heroine.create(heroine) }
+powerless_heroines = heroines.map { |heroine| Heroine.create(heroine) }
+powerless_heroines.each do |heroine| 
+  heroine.powers << Power.all.sample
+end
+

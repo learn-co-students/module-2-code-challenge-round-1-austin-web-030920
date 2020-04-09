@@ -1,0 +1,19 @@
+<p>
+  <strong>Name:</strong>
+  <%= @heroine.name %>
+</p>
+
+<p>
+  <strong>Super Name:</strong>
+  <%= @heroine.super_name %>
+</p>
+
+<p>
+  <strong>Powers:</strong>
+  <% @heroine.powers.each do |power| %>
+    <%= link_to power.name, power_path(power) %>
+  <% end %>
+</p>
+
+<%= link_to 'Edit', edit_heroine_path(@heroine) %> |
+<%= link_to 'Back', heroines_path %>
