@@ -1,0 +1,7 @@
+<%= form_for @heroine, url: {action: 'create'} do |f| %>
+  <h3>Name: <%= f.text_field :name %></h3>
+  <h3>Super Name: <%= f.text_area :super_name %></h3>
+  <%# BROKEN LINK <%= collection_select(:heroine, :power_id, Power.all, :id, :name) %> 
+  <%= f.submit "Create" %>
+  
+<% end %>

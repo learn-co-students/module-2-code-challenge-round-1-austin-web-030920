@@ -90,7 +90,8 @@ Show a form to create a new Heroine. It should have:
 
 - an input for name
 - an input for super name
-- a select dropdown to choose a power
+#FINISH THIS
+- a select dropdown to choose a power 
 - a submit button to create the Heroine
 
 After successfully creating a Heroine, the user should be redirected to the new Heroine's show page.
