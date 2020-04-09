@@ -1,0 +1,1764 @@
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/JR/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateHeroines (20170725185425)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "heroines" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "super_name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170725185425"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreatePowers (20170725185638)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "powers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170725185638"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-04-09 17:28:58.202942"], ["updated_at", "2020-04-09 17:28:58.202942"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/JR/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  [1m[36mPower Load (0.4ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "super strength"], ["description", "gives the wielder super-human strengths"], ["created_at", "2020-04-09 17:29:10.986019"], ["updated_at", "2020-04-09 17:29:10.986019"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "flight"], ["description", "gives the wielder the ability to fly through the skies at supersonic speed"], ["created_at", "2020-04-09 17:29:10.989532"], ["updated_at", "2020-04-09 17:29:10.989532"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "super human senses"], ["description", "allows the wielder to use her senses at a super-human level"], ["created_at", "2020-04-09 17:29:10.991564"], ["updated_at", "2020-04-09 17:29:10.991564"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "powers" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "elasticity"], ["description", "can stretch the human body to extreme lengths"], ["created_at", "2020-04-09 17:29:10.994281"], ["updated_at", "2020-04-09 17:29:10.994281"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kamala Khan"], ["super_name", "Ms. Marvel"], ["created_at", "2020-04-09 17:29:11.000828"], ["updated_at", "2020-04-09 17:29:11.000828"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Doreen Green"], ["super_name", "Squirrel Girl"], ["created_at", "2020-04-09 17:29:11.003190"], ["updated_at", "2020-04-09 17:29:11.003190"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Gwen Stacy"], ["super_name", "Spider-Gwen"], ["created_at", "2020-04-09 17:29:11.005559"], ["updated_at", "2020-04-09 17:29:11.005559"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Janet Van Dyne"], ["super_name", "The Wasp"], ["created_at", "2020-04-09 17:29:11.007459"], ["updated_at", "2020-04-09 17:29:11.007459"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Wanda Maximoff"], ["super_name", "Scarlet Witch"], ["created_at", "2020-04-09 17:29:11.009360"], ["updated_at", "2020-04-09 17:29:11.009360"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Carol Danvers"], ["super_name", "Captain Marvel"], ["created_at", "2020-04-09 17:29:11.011355"], ["updated_at", "2020-04-09 17:29:11.011355"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Jean Grey"], ["super_name", "Dark Phoenix"], ["created_at", "2020-04-09 17:29:11.013774"], ["updated_at", "2020-04-09 17:29:11.013774"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Ororo Munroe"], ["super_name", "Storm"], ["created_at", "2020-04-09 17:29:11.015740"], ["updated_at", "2020-04-09 17:29:11.015740"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Kitty Pryde"], ["super_name", "Shadowcat"], ["created_at", "2020-04-09 17:29:11.017576"], ["updated_at", "2020-04-09 17:29:11.017576"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "heroines" ("name", "super_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Elektra Natchios"], ["super_name", "Elektra"], ["created_at", "2020-04-09 17:29:11.019418"], ["updated_at", "2020-04-09 17:29:11.019418"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/JR/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/JR/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateHeroinePowers (20200409173325)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/JR/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateHeroinePowers (20200409173325)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "heroine_powers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "heroine_id" integer, "power_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_heroine_powers_on_heroine_id" ON "heroine_powers" ("heroine_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_heroine_powers_on_heroine_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_heroine_powers_on_heroine_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_heroine_powers_on_power_id" ON "heroine_powers" ("power_id")[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200409173325"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_heroine_powers_on_power_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_heroine_powers_on_power_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_heroine_powers_on_heroine_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_heroine_powers_on_heroine_id' AND type='index'
+[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/JR/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/heroines/index" for 127.0.0.1 at 2020-04-09 10:39:33 -0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/heroines/index"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/heroines/index" for 127.0.0.1 at 2020-04-09 10:40:34 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/heroines/index"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/heroines/" for 127.0.0.1 at 2020-04-09 10:40:56 -0700
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.7ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 908ms (Views: 883.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/heroines/2" for 127.0.0.1 at 2020-04-09 10:42:54 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/heroines/2"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/heroines/2" for 127.0.0.1 at 2020-04-09 10:43:37 -0700
+Started GET "/heroines/2" for 127.0.0.1 at 2020-04-09 10:43:47 -0700
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for HeroinesController):
+  
+actionpack (5.1.6) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for HeroinesController):
+  
+actionpack (5.1.6) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/heroines/2" for 127.0.0.1 at 2020-04-09 10:44:56 -0700
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHeroine Load (0.5ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 27ms (ActiveRecord: 5.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Heroine with 'id'=id):
+  
+app/controllers/heroines_controller.rb:7:in `show'
+Started GET "/heroines/2" for 127.0.0.1 at 2020-04-09 10:45:16 -0700
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHeroine Load (1.4ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 406 Not Acceptable in 63ms (ActiveRecord: 3.6ms)
+
+
+  
+ActionController::UnknownFormat (HeroinesController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.6) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.6) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.6) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.6) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/heroines/2/2" for 127.0.0.1 at 2020-04-09 10:45:32 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/heroines/2/2"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/heroines/" for 127.0.0.1 at 2020-04-09 10:47:35 -0700
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.5ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"heroines", :id=>nil}, missing required keys: [:id]):
+    3: <ul>
+    4:   <% @heroines.each do |heroine| %>
+    5:     <li>
+    6:       <%= link_to heroine.super_name, heroine_path(@heroine) %>
+    7:     </li>
+    8:     <br>
+    9:   <% end %>
+  
+app/views/heroines/index.html.erb:6:in `block in _app_views_heroines_index_html_erb__3734647255049195123_70340830915860'
+app/views/heroines/index.html.erb:4:in `_app_views_heroines_index_html_erb__3734647255049195123_70340830915860'
+Started GET "/heroines/3" for 127.0.0.1 at 2020-04-09 10:47:51 -0700
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 406 Not Acceptable in 36ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionController::UnknownFormat (HeroinesController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.6) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.6) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.6) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.6) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/heroines/d" for 127.0.0.1 at 2020-04-09 10:47:55 -0700
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"d"}
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Heroine with 'id'=d):
+  
+app/controllers/heroines_controller.rb:7:in `show'
+Started GET "/heroines/d/2" for 127.0.0.1 at 2020-04-09 10:47:59 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/heroines/d/2"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/heroines/" for 127.0.0.1 at 2020-04-09 10:51:32 -0700
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.5ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"heroines", :id=>nil}, missing required keys: [:id]):
+    3: <ul>
+    4:   <% @heroines.each do |heroine| %>
+    5:     <li>
+    6:       <%= link_to heroine.super_name, heroine_path(@heroine) %>
+    7:     </li>
+    8:     <br>
+    9:   <% end %>
+  
+app/views/heroines/index.html.erb:6:in `block in _app_views_heroines_index_html_erb__3734647255049195123_70340841749980'
+app/views/heroines/index.html.erb:4:in `_app_views_heroines_index_html_erb__3734647255049195123_70340841749980'
+Started GET "/heroines/" for 127.0.0.1 at 2020-04-09 10:53:55 -0700
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (1.1ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 91ms (Views: 83.7ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/heroines" for 127.0.0.1 at 2020-04-09 10:53:57 -0700
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.6ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 59ms (Views: 56.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/heroines" for 127.0.0.1 at 2020-04-09 10:53:58 -0700
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 58ms (Views: 52.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/heroines" for 127.0.0.1 at 2020-04-09 10:53:59 -0700
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 59ms (Views: 55.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/heroines" for 127.0.0.1 at 2020-04-09 10:54:10 -0700
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 46ms (Views: 44.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/heroines" for 127.0.0.1 at 2020-04-09 10:54:11 -0700
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 51ms (Views: 48.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/heroines" for 127.0.0.1 at 2020-04-09 10:54:12 -0700
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 90ms (Views: 87.9ms | ActiveRecord: 0.4ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/JR/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started GET "/heroines" for 127.0.0.1 at 2020-04-09 10:54:43 -0700
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.5ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 78ms (Views: 70.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/heroines/1" for 127.0.0.1 at 2020-04-09 10:54:45 -0700
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (0.3ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 406 Not Acceptable in 51ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionController::UnknownFormat (HeroinesController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.6) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.6) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.6) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.6) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/heroines" for 127.0.0.1 at 2020-04-09 10:54:47 -0700
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (1.7ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 55ms (Views: 51.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/heroines/3" for 127.0.0.1 at 2020-04-09 10:54:48 -0700
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 406 Not Acceptable in 55ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionController::UnknownFormat (HeroinesController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.6) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.6) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.6) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.6) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/heroines" for 127.0.0.1 at 2020-04-09 10:54:49 -0700
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 46ms (Views: 42.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/heroines/3" for 127.0.0.1 at 2020-04-09 10:54:54 -0700
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 406 Not Acceptable in 52ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionController::UnknownFormat (HeroinesController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.6) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.6) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.6) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.6) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/heroines/3" for 127.0.0.1 at 2020-04-09 10:55:52 -0700
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mHeroine Load (0.2ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 65ms (Views: 60.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/heroines/3" for 127.0.0.1 at 2020-04-09 10:57:04 -0700
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mHeroine Load (0.1ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 46ms (Views: 42.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/powers" for 127.0.0.1 at 2020-04-09 11:00:48 -0700
+Processing by PowersController#index as HTML
+  Rendering powers/index.html.erb within layouts/application
+  [1m[36mPower Load (3.6ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  Rendered powers/index.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 89ms (Views: 83.2ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/powers/new" for 127.0.0.1 at 2020-04-09 11:20:36 -0700
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mPower Load (0.7ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 40ms (ActiveRecord: 6.5ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Power with 'id'=new):
+  
+app/controllers/powers_controller.rb:7:in `show'
+Started GET "/powers/new" for 127.0.0.1 at 2020-04-09 11:22:02 -0700
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mPower Load (0.1ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Power with 'id'=new):
+  
+app/controllers/powers_controller.rb:7:in `show'
+Started GET "/powers/new" for 127.0.0.1 at 2020-04-09 11:22:13 -0700
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mPower Load (0.2ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 4ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Power with 'id'=new):
+  
+app/controllers/powers_controller.rb:7:in `show'
+Started GET "/powers/new" for 127.0.0.1 at 2020-04-09 11:23:14 -0700
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"new"}
+Completed 500 Internal Server Error in 15ms
+
+
+  
+TypeError (no implicit conversion of Symbol into Integer):
+  
+app/controllers/powers_controller.rb:7:in `[]'
+app/controllers/powers_controller.rb:7:in `show'
+Started GET "/powers/new" for 127.0.0.1 at 2020-04-09 11:23:41 -0700
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"new"}
+Completed 500 Internal Server Error in 11ms
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+app/controllers/powers_controller.rb:7:in `[]'
+app/controllers/powers_controller.rb:7:in `show'
+Started GET "/powers/new" for 127.0.0.1 at 2020-04-09 11:24:16 -0700
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"new"}
+  [1m[36mPower Load (0.4ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 25ms (ActiveRecord: 1.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Power with 'id'=new):
+  
+app/controllers/powers_controller.rb:7:in `show'
+Started GET "/heroine/new" for 127.0.0.1 at 2020-04-09 11:24:49 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/heroine/new"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/heroines/new" for 127.0.0.1 at 2020-04-09 11:25:21 -0700
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/new.html.erb within layouts/application (12.4ms)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 1.8ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Powers):
+    1: <%= form_with model: @heroine do |f| %>
+    2:   <%= f.text_field :name %>
+    3:   <%= f.text_area :super_name %>
+    4:   <%= collection_select(:power, :power_id, Powers.all) %>
+    5:   <%= f.submit "Create" %>
+    6:   
+    7: <% end %>
+  
+app/views/heroines/new.html.erb:4:in `block in _app_views_heroines_new_html_erb___1889918046431793410_70340816955580'
+app/views/heroines/new.html.erb:1:in `_app_views_heroines_new_html_erb___1889918046431793410_70340816955580'
+Started GET "/heroines/new" for 127.0.0.1 at 2020-04-09 11:25:59 -0700
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/new.html.erb within layouts/application (10.8ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Powers):
+    1: <%= form_with model: @heroine do |f| %>
+    2:   <%= f.text_field :name %>
+    3:   <%= f.text_area :super_name %>
+    4:   <%= collection_select(:powers, :power_id, Powers.all) %>
+    5:   <%= f.submit "Create" %>
+    6:   
+    7: <% end %>
+  
+app/views/heroines/new.html.erb:4:in `block in _app_views_heroines_new_html_erb___1889918046431793410_70340830572460'
+app/views/heroines/new.html.erb:1:in `_app_views_heroines_new_html_erb___1889918046431793410_70340830572460'
+Started GET "/heroines/new" for 127.0.0.1 at 2020-04-09 11:26:08 -0700
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/new.html.erb within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Powers):
+    1: <%= form_with model: @heroine do |f| %>
+    2:   <%= f.text_field :name %>
+    3:   <%= f.text_area :super_name %>
+    4:   <%= collection_select(:powers, :powers_id, Powers.all) %>
+    5:   <%= f.submit "Create" %>
+    6:   
+    7: <% end %>
+  
+app/views/heroines/new.html.erb:4:in `block in _app_views_heroines_new_html_erb___1889918046431793410_70340802073020'
+app/views/heroines/new.html.erb:1:in `_app_views_heroines_new_html_erb___1889918046431793410_70340802073020'
+Started GET "/heroines/new" for 127.0.0.1 at 2020-04-09 11:28:15 -0700
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/new.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/JR/Development/code/module-2-code-challenge-round-1-austin-web-030920/app/views/heroines/new.html.erb:11: unterminated string meets end of file
+          end
+              ^
+/Users/JR/Development/code/module-2-code-challenge-round-1-austin-web-030920/app/views/heroines/new.html.erb:11: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/heroines/new.html.erb:11: unterminated string meets end of file
+app/views/heroines/new.html.erb:11: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/heroines/new" for 127.0.0.1 at 2020-04-09 11:28:33 -0700
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 83ms (Views: 79.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/heroines/new" for 127.0.0.1 at 2020-04-09 11:29:48 -0700
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 78ms (Views: 76.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/heroines" for 127.0.0.1 at 2020-04-09 11:29:54 -0700
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lx4ouHQ+4QoFs/uPEnx2E4q9FCxnLZn9WyMuBEQxEjpcDK/Y9/kHL16gwehiu6GgPZ5lnKh0R+jNiD50zJtyOQ==", "heroine"=>{"name"=>"", "super_name"=>""}, "commit"=>"Create"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant HeroinesController::Herione):
+  
+app/controllers/heroines_controller.rb:15:in `create'
+Started GET "/heroines/1" for 127.0.0.1 at 2020-04-09 11:30:28 -0700
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHeroine Load (0.7ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 39ms (Views: 33.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/heroines/1/2" for 127.0.0.1 at 2020-04-09 11:30:31 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/heroines/1/2"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/heroines/new" for 127.0.0.1 at 2020-04-09 11:31:55 -0700
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 82ms (Views: 46.0ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/heroines" for 127.0.0.1 at 2020-04-09 11:31:57 -0700
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Sq+jF8YA7zvgek4YrC0+68k9FEduTPdNp8OwfDR3gzGBvSR3RccJHrtpdH/c6ulYfh5l96EVKVgxaKAMvN3jMg==", "heroine"=>{"name"=>"", "super_name"=>""}, "commit"=>"Create"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant HeroinesController::Herione):
+  
+app/controllers/heroines_controller.rb:15:in `create'
+Started POST "/heroines" for 127.0.0.1 at 2020-04-09 11:32:11 -0700
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Sq+jF8YA7zvgek4YrC0+68k9FEduTPdNp8OwfDR3gzGBvSR3RccJHrtpdH/c6ulYfh5l96EVKVgxaKAMvN3jMg==", "heroine"=>{"name"=>"", "super_name"=>""}, "commit"=>"Create"}
+Completed 500 Internal Server Error in 5ms
+
+
+  
+NameError (uninitialized constant HeroinesController::Herione):
+  
+app/controllers/heroines_controller.rb:15:in `create'
+Started POST "/heroines" for 127.0.0.1 at 2020-04-09 11:34:34 -0700
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Sq+jF8YA7zvgek4YrC0+68k9FEduTPdNp8OwfDR3gzGBvSR3RccJHrtpdH/c6ulYfh5l96EVKVgxaKAMvN3jMg==", "heroine"=>{"name"=>"", "super_name"=>""}, "commit"=>"Create"}
+Completed 500 Internal Server Error in 4ms
+
+
+  
+NameError (uninitialized constant HeroinesController::Herione):
+  
+app/controllers/heroines_controller.rb:15:in `create'
+Started GET "/heroines" for 127.0.0.1 at 2020-04-09 11:36:01 -0700
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (28.1ms)
+Completed 200 OK in 103ms (Views: 81.6ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/heroines/4" for 127.0.0.1 at 2020-04-09 11:36:03 -0700
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mHeroine Load (0.5ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 75ms (Views: 69.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/heroines/new" for 127.0.0.1 at 2020-04-09 11:51:08 -0700
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 64ms (Views: 61.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/heroines" for 127.0.0.1 at 2020-04-09 11:51:10 -0700
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nBhI/qfBn5QEC7ufxWnQX5coF9lk2BnHpfCe0kMohe5XCs+eJAZ5sV8Ygfi1rgfsIAtmaauBx9IzW46iy4Ll7Q==", "heroine"=>{"name"=>"", "super_name"=>""}, "commit"=>"Create"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant HeroinesController::Herione):
+  
+app/controllers/heroines_controller.rb:15:in `create'
+Started GET "/heroines/new" for 127.0.0.1 at 2020-04-09 11:55:21 -0700
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/new.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 116ms (Views: 84.5ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/heroines" for 127.0.0.1 at 2020-04-09 11:55:23 -0700
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i2TglWciiPVCRyUmuikDg/OWQCDCqkOhpEeG5u/hco5Admf15OVu0BlUH0HK7tQwRLUxkA3znbQy7JaWZ0sSjQ==", "heroine"=>{"name"=>"", "super_name"=>""}, "commit"=>"Create"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant HeroinesController::Herione):
+  
+app/controllers/heroines_controller.rb:15:in `create'
+Started GET "/heroines/new" for 127.0.0.1 at 2020-04-09 12:01:15 -0700
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 89ms (Views: 56.2ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/heroines" for 127.0.0.1 at 2020-04-09 12:01:18 -0700
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/D1xx1qJryqGWOqL54EtxOLj5Os0abpu7la9rN3uSyU3L/an2U5JD91L0OyXRvp3VcCVW/swZHt4/a3cVUQrJg==", "heroine"=>{"name"=>"", "super_name"=>""}, "commit"=>"Create"}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant HeroinesController::Herione):
+  
+app/controllers/heroines_controller.rb:15:in `create'
+Started POST "/heroines" for 127.0.0.1 at 2020-04-09 12:02:23 -0700
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/D1xx1qJryqGWOqL54EtxOLj5Os0abpu7la9rN3uSyU3L/an2U5JD91L0OyXRvp3VcCVW/swZHt4/a3cVUQrJg==", "heroine"=>{"name"=>"", "super_name"=>""}, "commit"=>"Create"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NameError (uninitialized constant HeroinesController::Herione):
+  
+app/controllers/heroines_controller.rb:15:in `create'
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/JR/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started POST "/heroines" for 127.0.0.1 at 2020-04-09 12:12:13 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/D1xx1qJryqGWOqL54EtxOLj5Os0abpu7la9rN3uSyU3L/an2U5JD91L0OyXRvp3VcCVW/swZHt4/a3cVUQrJg==", "heroine"=>{"name"=>"", "super_name"=>""}, "commit"=>"Create"}
+Started POST "/heroines" for 127.0.0.1 at 2020-04-09 12:13:25 -0700
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/D1xx1qJryqGWOqL54EtxOLj5Os0abpu7la9rN3uSyU3L/an2U5JD91L0OyXRvp3VcCVW/swZHt4/a3cVUQrJg==", "heroine"=>{"name"=>"", "super_name"=>""}, "commit"=>"Create"}
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/JR/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/JR/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started POST "/heroines" for 127.0.0.1 at 2020-04-09 12:16:04 -0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/D1xx1qJryqGWOqL54EtxOLj5Os0abpu7la9rN3uSyU3L/an2U5JD91L0OyXRvp3VcCVW/swZHt4/a3cVUQrJg==", "heroine"=>{"name"=>"", "super_name"=>""}, "commit"=>"Create"}
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/JR/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started POST "/heroines" for 127.0.0.1 at 2020-04-09 12:17:46 -0700
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/D1xx1qJryqGWOqL54EtxOLj5Os0abpu7la9rN3uSyU3L/an2U5JD91L0OyXRvp3VcCVW/swZHt4/a3cVUQrJg==", "heroine"=>{"name"=>"", "super_name"=>""}, "commit"=>"Create"}
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/JR/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /Users/JR/Development/code/module-2-code-challenge-round-1-austin-web-030920/config/initializers/new_framework_defaults.rb:21)
+Started POST "/heroines" for 127.0.0.1 at 2020-04-09 12:19:12 -0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/D1xx1qJryqGWOqL54EtxOLj5Os0abpu7la9rN3uSyU3L/an2U5JD91L0OyXRvp3VcCVW/swZHt4/a3cVUQrJg==", "heroine"=>{"name"=>"", "super_name"=>""}, "commit"=>"Create"}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant HeroinesController::Herione):
+  
+app/controllers/heroines_controller.rb:18:in `create'
+Started GET "/heroines" for 127.0.0.1 at 2020-04-09 12:23:09 -0700
+Processing by HeroinesController#index as HTML
+  Rendering heroines/index.html.erb within layouts/application
+  [1m[36mHeroine Load (0.6ms)[0m  [1m[34mSELECT "heroines".* FROM "heroines"[0m
+  Rendered heroines/index.html.erb within layouts/application (26.7ms)
+Completed 200 OK in 363ms (Views: 336.3ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/heroines/5" for 127.0.0.1 at 2020-04-09 12:23:11 -0700
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mHeroine Load (0.6ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 73ms (Views: 61.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/heroines/8" for 127.0.0.1 at 2020-04-09 12:23:43 -0700
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 70ms (Views: 62.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/heroines/new" for 127.0.0.1 at 2020-04-09 12:24:00 -0700
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/new.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 86ms (Views: 82.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/heroines" for 127.0.0.1 at 2020-04-09 12:24:52 -0700
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XW2ZbFJOg60MFjQdDxrowCTqKCdrQb3WTwfQQKwk/9KWfx4M0YlliFcFDnp/3T9zk8lZl6QYY8PZrMAwJI6f0Q==", "heroine"=>{"name"=>"", "super_name"=>""}, "commit"=>"Create"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant HeroinesController::Herione):
+  
+app/controllers/heroines_controller.rb:18:in `create'
+Started GET "/heroines/2" for 127.0.0.1 at 2020-04-09 12:28:04 -0700
+Processing by HeroinesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHeroine Load (0.4ms)[0m  [1m[34mSELECT  "heroines".* FROM "heroines" WHERE "heroines"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering heroines/show.html.erb within layouts/application
+  Rendered heroines/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 89ms (Views: 84.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/heroines/2/2" for 127.0.0.1 at 2020-04-09 12:28:07 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/heroines/2/2"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/heroines/2/2" for 127.0.0.1 at 2020-04-09 12:31:09 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/heroines/2/2"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/heroines/2/2" for 127.0.0.1 at 2020-04-09 12:31:11 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/heroines/2/2"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/heroines/new" for 127.0.0.1 at 2020-04-09 12:31:16 -0700
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/new.html.erb within layouts/application (97.9ms)
+Completed 200 OK in 199ms (Views: 183.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/heroines" for 127.0.0.1 at 2020-04-09 12:31:18 -0700
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N2RW8Ty6ddKMGxTPvrzPzpGBHrVUiowuDg19u0YznRf8dtGRv32T99cILqjOexh9JqJvBZvTUjuYpm3Lzpn9FA==", "heroine"=>{"name"=>"", "super_name"=>""}, "commit"=>"Create"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant HeroinesController::Herione):
+  
+app/controllers/heroines_controller.rb:18:in `create'
+Started POST "/heroines" for 127.0.0.1 at 2020-04-09 12:33:44 -0700
+Processing by HeroinesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"N2RW8Ty6ddKMGxTPvrzPzpGBHrVUiowuDg19u0YznRf8dtGRv32T99cILqjOexh9JqJvBZvTUjuYpm3Lzpn9FA==", "heroine"=>{"name"=>"", "super_name"=>""}, "commit"=>"Create"}
+Completed 500 Internal Server Error in 6ms
+
+
+  
+NameError (uninitialized constant HeroinesController::Herione):
+  
+app/controllers/heroines_controller.rb:18:in `create'
+Started GET "/powers" for 127.0.0.1 at 2020-04-09 12:35:11 -0700
+Processing by PowersController#index as HTML
+  Rendering powers/index.html.erb within layouts/application
+  [1m[36mPower Load (0.4ms)[0m  [1m[34mSELECT "powers".* FROM "powers"[0m
+  Rendered powers/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 66ms (Views: 57.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/powers/1" for 127.0.0.1 at 2020-04-09 12:35:18 -0700
+Processing by PowersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPower Load (0.4ms)[0m  [1m[34mSELECT  "powers".* FROM "powers" WHERE "powers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 406 Not Acceptable in 64ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionController::UnknownFormat (PowersController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.6) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.6) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.6) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.6) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.6) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.6) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.6) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.6) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.6) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.6) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.6) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.6) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.6) lib/action_dispatch/routing/route_set.rb:844:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.6) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.6) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.6) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/crete" for 127.0.0.1 at 2020-04-09 12:36:03 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/crete"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/new" for 127.0.0.1 at 2020-04-09 12:36:07 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+actionpack (5.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.6) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/heroines/new" for 127.0.0.1 at 2020-04-09 12:36:16 -0700
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 85ms (Views: 58.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/heroines/new" for 127.0.0.1 at 2020-04-09 12:41:44 -0700
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/new.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 5..7)):
+    1: <%= form_for @heroine, url: {action: 'create'} do |f| %>
+    2:   <h3>Name: <%= f.text_field :name %></h3>
+    3:   <h3>Super Name: <%= f.text_area :super_name %></h3>
+    4:   <%= collection_select(:heroine_powers, :power_id, Power.all) %>
+    5:   <%= f.submit "Create" %>
+    6:   
+    7: <% end %>
+  
+app/views/heroines/new.html.erb:4:in `block in _app_views_heroines_new_html_erb__4288535903201837819_70344281625780'
+app/views/heroines/new.html.erb:1:in `_app_views_heroines_new_html_erb__4288535903201837819_70344281625780'
+Started GET "/heroines/new" for 127.0.0.1 at 2020-04-09 12:44:42 -0700
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/new.html.erb within layouts/application (28.0ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `power_id' for #<Heroine:0x00007ff49a71a4f8>
+Did you mean?  power_ids
+               power_ids=):
+    1: <%= form_for @heroine, url: {action: 'create'} do |f| %>
+    2:   <h3>Name: <%= f.text_field :name %></h3>
+    3:   <h3>Super Name: <%= f.text_area :super_name %></h3>
+    4:   <%= collection_select(:heroine, :power_id, Power.all, :id, :name) %>
+    5:   <%= f.submit "Create" %>
+    6:   
+    7: <% end %>
+  
+app/views/heroines/new.html.erb:4:in `block in _app_views_heroines_new_html_erb__4288535903201837819_70344281461820'
+app/views/heroines/new.html.erb:1:in `_app_views_heroines_new_html_erb__4288535903201837819_70344281461820'
+Started GET "/heroines/new" for 127.0.0.1 at 2020-04-09 12:46:02 -0700
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/new.html.erb within layouts/application (61.6ms)
+Completed 500 Internal Server Error in 105ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `power_id' for #<Heroine:0x00007ff49a7a8dc0>
+Did you mean?  power_ids
+               power_ids=):
+    1: <%= form_for @heroine, url: {action: 'create'} do |f| %>
+    2:   <h3>Name: <%= f.text_field :name %></h3>
+    3:   <h3>Super Name: <%= f.text_area :super_name %></h3>
+    4:   <%= collection_select(:heroine, :power_id, Power.all, :id, :name) %>
+    5:   <%= f.submit "Create" %>
+    6:   
+    7: <% end %>
+  
+app/views/heroines/new.html.erb:4:in `block in _app_views_heroines_new_html_erb__4288535903201837819_70344271468780'
+app/views/heroines/new.html.erb:1:in `_app_views_heroines_new_html_erb__4288535903201837819_70344271468780'
+Started GET "/heroines/new" for 127.0.0.1 at 2020-04-09 12:46:38 -0700
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/new.html.erb within layouts/application (42.6ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant Heroine::Heroinepower):
+    1: <%= form_for @heroine, url: {action: 'create'} do |f| %>
+    2:   <h3>Name: <%= f.text_field :name %></h3>
+    3:   <h3>Super Name: <%= f.text_area :super_name %></h3>
+    4:   <%= collection_select(:heroine, :power_ids, Power.all, :id, :name) %>
+    5:   <%= f.submit "Create" %>
+    6:   
+    7: <% end %>
+  
+app/views/heroines/new.html.erb:4:in `block in _app_views_heroines_new_html_erb__4288535903201837819_70344269863460'
+app/views/heroines/new.html.erb:1:in `_app_views_heroines_new_html_erb__4288535903201837819_70344269863460'
+Started GET "/heroines/new" for 127.0.0.1 at 2020-04-09 12:47:00 -0700
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/new.html.erb within layouts/application (19.4ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `power_id' for #<Heroine:0x00007ff49d705168>
+Did you mean?  power_ids
+               power_ids=):
+    1: <%= form_for @heroine, url: {action: 'create'} do |f| %>
+    2:   <h3>Name: <%= f.text_field :name %></h3>
+    3:   <h3>Super Name: <%= f.text_area :super_name %></h3>
+    4:   <%= collection_select(:heroine, :power_id, Power.all, :id, :name) %>
+    5:   <%= f.submit "Create" %>
+    6:   
+    7: <% end %>
+  
+app/views/heroines/new.html.erb:4:in `block in _app_views_heroines_new_html_erb__4288535903201837819_70344271650060'
+app/views/heroines/new.html.erb:1:in `_app_views_heroines_new_html_erb__4288535903201837819_70344271650060'
+Started GET "/heroines/new" for 127.0.0.1 at 2020-04-09 12:48:40 -0700
+Processing by HeroinesController#new as HTML
+  Rendering heroines/new.html.erb within layouts/application
+  Rendered heroines/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 73ms (Views: 70.5ms | ActiveRecord: 0.0ms)
+
+
