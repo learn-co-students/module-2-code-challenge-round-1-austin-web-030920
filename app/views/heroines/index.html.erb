@@ -1,10 +1,8 @@
 <h2>All Heroines</h2>
 
-<ul>
-  <% @heroines.each do |heroine| %>
-    <li>
-      <%= heroine.super_name %>
-    </li>
-    <br>
-  <% end %>
-</ul>
+<% @sorted_heroines = @heroines.sort_by{|hero| hero.super_name}%>
+<% @sorted_heroines.each do |hero| %>
+<%= link_to hero.super_name, heroine_path(hero)%><br><br>
+<% end %>
+
+<%= link_to '<button type="button">New Heroine</button>'.html_safe, "heroines/new" %>
