@@ -1,0 +1,6 @@
+<h2><%= @heroine.super_name %></h2>
+<h3><%= @heroine.name %></h3><br>
+<%= @heroine.powers.each do |power| %>
+    <%= link_to power.name, power_path(power) %><br>
+<% end %><br><br>
+<%= link_to '<button type="button">Edit Heroine</button>'.html_safe, edit_heroine_path(@heroine) %>
